@@ -1,7 +1,9 @@
 <div align="center">
 
-# <img width="307" height="307" alt="Gemini_Generated_Image_u7vusqu7vusqu7vu" src="https://github.com/user-attachments/assets/15f7f6ad-006f-49bc-8337-3210e82c4058" />
- WattSplit
+<img width="307" height="307" alt="Wattsplit" src="https://github.com/user-attachments/assets/265255b0-8d64-4c21-8ddd-50e2c00b129b" />
+
+
+ **WattSplit**
 
 **Split a shared prepaid electricity meter fairly, down to the last kWh.**
 
@@ -15,6 +17,7 @@
 </div>
 
 ---
+<img width="1919" height="1013" alt="Screenshot 2026-10-17 195752" src="https://github.com/user-attachments/assets/121978f3-d2d6-4312-be86-7a0863ad929f" />
 
 ## About
 
@@ -27,7 +30,7 @@ WattSplit does that maths for you. Enter the main meter and sub-meter readings f
 - **Fair by usage:** every flat pays for the kWh it actually used.
 - **Any number of sub-meters:** choose 1 to 6, and change it whenever your building changes.
 - **Live rate:** see the ৳ per kWh update as you type.
-- **Clear results:** a result window with a summary, a donut chart, a per-flat breakdown and the full working.
+- **Clear results:** a results window with a summary, a donut chart, a per-flat breakdown and the full working.
 - **Mismatch warning:** tells you if the sub-meters don't add up to the main meter (common lights, a pump, line loss, or a wrong reading).
 - **Counting up or down:** works whether your meter's reading increases or counts down.
 - **New cycle in one tap:** the current readings become the previous ones for the next cycle.
@@ -62,6 +65,9 @@ Using the main meter's real spend means taxes, demand charges and tariff slabs a
 5. Choose how many sub-meters are on your main meter, then enter each flat's previous and current reading. Only your own flat is required.
 6. Review, then click **Calculate my bill**.
 7. When you recharge again, tap **Start new cycle** so the last readings carry over.
+
+<img width="1055" height="717" alt="Screenshot 2026-10-17 195837" src="https://github.com/user-attachments/assets/41bfc7c2-5f96-489b-92cb-bcd6b15670c7" />
+
 
 ## Run it locally
 
