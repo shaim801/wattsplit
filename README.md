@@ -1,6 +1,7 @@
 <div align="center">
 
-# ⚡ WattSplit
+# <img width="307" height="307" alt="Gemini_Generated_Image_u7vusqu7vusqu7vu" src="https://github.com/user-attachments/assets/15f7f6ad-006f-49bc-8337-3210e82c4058" />
+ WattSplit
 
 **Split a shared prepaid electricity meter fairly, down to the last kWh.**
 
@@ -73,12 +74,6 @@ cd wattsplit
 
 Then open `index.html` in your browser. Custom fonts load from Google Fonts, so they need an internet connection. Without one, the page falls back to system fonts.
 
-## Deploy with GitHub Pages
-
-1. Push `index.html` to the root of a public repository.
-2. Go to **Settings → Pages**.
-3. Set **Source** to *Deploy from a branch*, then choose `main` and `/ (root)`.
-4. Wait a minute or two. The site goes live at `https://<username>.github.io/<repo-name>/`.
 
 ## Tech
 
@@ -94,13 +89,6 @@ wattsplit/
 ├── index.html   # the whole site: homepage + calculator
 └── README.md
 ```
-
-## Roadmap
-
-- [ ] History of past cycles
-- [ ] Optional fixed charges and common-area split
-- [ ] Export or share the result as an image
-- [ ] Bengali language option
 
 ## Author
 
