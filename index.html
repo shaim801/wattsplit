@@ -594,6 +594,7 @@ window.addEventListener("resize",()=>{fit();if($("ov").classList.contains("open"
   const co=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){tween(e.target,+e.target.dataset.count,x=>Math.round(x),1400);co.unobserve(e.target);}}),{threshold:.6});
   document.querySelectorAll("[data-count]").forEach(el=>co.observe(el));
   addEventListener("scroll",()=>{$("hnav").classList.toggle("sc",scrollY>8);const m=document.documentElement.scrollHeight-innerHeight;$("hprog").style.width=(m>0?scrollY/m*100:0)+"%";},{passive:true});
+  (function(){const t=document.querySelector(".hmq-t");if(!t)return;const kids=[...t.children],n=kids.length/2,one=kids.slice(0,n).map(k=>k.outerHTML).join(""),w=t.scrollWidth/2;if(!w)return;const reps=Math.ceil(Math.max(innerWidth,screen.width)/w)+1;t.innerHTML=one.repeat(reps*2);t.style.animationDuration=(reps*w/70)+"s";})();
   const hero=document.querySelector(".hhero");
   hero.addEventListener("pointermove",e=>{if(e.pointerType!=="mouse")return;const r=hero.getBoundingClientRect(),nx=(e.clientX-r.left)/r.width-.5,ny=(e.clientY-r.top)/r.height-.5;hero.querySelectorAll(".hchip").forEach((c,i)=>{const k=(i%2?-1:1)*(14+i*6);c.style.setProperty("--tx",nx*k+"px");c.style.setProperty("--ty",ny*k+"px");});});
   hero.addEventListener("pointerleave",()=>hero.querySelectorAll(".hchip").forEach(c=>{c.style.setProperty("--tx","0px");c.style.setProperty("--ty","0px");}));
