@@ -47,14 +47,6 @@ Your bill     = Your kWh used × Rate per kWh
 
 Using the main meter's real spend means taxes, demand charges and tariff slabs are already included in the rate.
 
-**Example**
-
-| Step | Calculation | Result |
-| --- | --- | --- |
-| Money spent | 1,404.35 − 128.52 | ৳ 1,275.83 |
-| Main meter kWh used | 2,199.84 − 1,980.45 | 219.39 kWh |
-| Rate per kWh | 1,275.83 ÷ 219.39 | ৳ 5.8154 |
-| Your bill | 26.74 kWh × 5.8154 | **৳ 155.50** |
 
 ## How to use it
 
