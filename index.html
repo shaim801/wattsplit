@@ -3,23 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<script>(function(){var t=null;try{t=localStorage.getItem("wattsplit-theme");}catch(e){}if(t!=="dark"&&t!=="light"){t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.setAttribute("data-theme",t);document.documentElement.style.colorScheme=t;var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="dark"?"#0b1410":"#ffffff";})();</script>
 <title>WattSplit · Electricity Bill Calculator</title>
 <link rel="icon" type="image/png" href="data:image/png;base64,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">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f4f7f4;--card:#fff;--tx:#0b2a1a;--mut:#4f6358;--bd:#dfe6e0;--ac:#0b2a1a;--acbg:#dcfbd9;--ok:#16794a;--warn:#8a5200;--warnbg:#fff4df;--c2:#7fd99a;--c3:#a8bbb0;--f1:#15803d;--f2:#d97706;--f3:#4a6fa5;--f4:#0f8f9b;--f5:#a24d9c;--f6:#7b8a1f;--onac:#fff;--onf:#fff;--orb:.7;--sh:0 10px 30px rgba(11,42,26,.08);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--tx);font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5;min-height:100vh}
-h1,h2,h3,.hero .b,.dc b,.go,.st b,.you,.logo,.wt,.tile b{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"DM Sans","Hind Siliguri",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5;min-height:100vh}
+h1,h2,h3,.hero .b,.dc b,.go,.st b,.you,.logo,.wt,.tile b{font-family:"Bricolage Grotesque","Hind Siliguri","DM Sans","Hind Siliguri",system-ui,sans-serif}
 input,button{font-family:inherit}
 .orbs{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
 .orbs i{position:absolute;border-radius:50%;filter:blur(70px);opacity:var(--orb);animation:float 16s ease-in-out infinite}
 .orbs i:nth-child(1){width:340px;height:340px;background:#c9f5c8;top:-90px;right:-60px}
 .orbs i:nth-child(2){width:300px;height:300px;background:#dcfbd9;bottom:8%;left:-90px;animation-delay:-5s}
 .orbs i:nth-child(3){width:240px;height:240px;background:#c9f5c8;bottom:-80px;right:15%;animation-delay:-9s}
-.wrap{max-width:720px;margin:0 auto;padding:18px 16px 24px}
+.wrap{max-width:640px;margin:0 auto;padding:18px 16px 24px}
 header{display:flex;align-items:center;gap:14px;margin:4px 0 18px;animation:up .6s both}
 .logo{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:1.6rem;background:var(--ac);box-shadow:0 8px 22px rgba(11,42,26,.22)}
 .bolt{display:inline-block;animation:zap 2.4s ease-in-out infinite}
@@ -46,24 +48,24 @@ h1{font-size:1.4rem;margin:0;letter-spacing:-.01em}
 .wstat.show{opacity:1}.wstat.flash{animation:flash .6s}
 .viewport{overflow:hidden;transition:height .5s cubic-bezier(.2,.8,.2,1)}
 .slides{display:flex;align-items:flex-start;transition:transform .55s cubic-bezier(.2,.8,.2,1)}
-.slide{min-width:100%;padding:16px;opacity:0;transform:scale(.97);transition:opacity .4s,transform .5s}
+.slide{min-width:100%;padding:22px;opacity:0;transform:scale(.97);transition:opacity .4s,transform .5s}
 .slide.act{opacity:1;transform:none}
-.wfoot{display:flex;gap:10px;padding:12px 16px 16px;border-top:1px solid var(--bd)}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.pane{background:var(--bg);border:1px solid var(--bd);border-radius:14px;padding:12px;display:grid;gap:8px}
-.tag{font-size:.74rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:var(--mut)}
-label{display:block;font-size:.78rem;color:var(--mut)}
+.wfoot{display:flex;gap:12px;padding:16px 22px 22px;border-top:1px solid var(--bd)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pane{background:var(--bg);border:1px solid var(--bd);border-radius:16px;padding:16px;display:grid;gap:12px}
+.tag{font-size:.8rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:var(--mut)}
+label{display:block;font-size:.88rem;color:var(--mut)}
 .in{position:relative;margin-top:3px}
 .in i{position:absolute;right:10px;top:50%;transform:translateY(-50%);font-style:normal;font-size:.78rem;color:var(--mut);pointer-events:none}
-input{width:100%;padding:11px 12px;border:1px solid var(--bd);border-radius:11px;background:var(--card);color:var(--tx);font-size:1rem;min-width:0;font-variant-numeric:tabular-nums;transition:border-color .2s,box-shadow .2s,transform .15s}
+input{width:100%;padding:14px 14px;border:1px solid var(--bd);border-radius:12px;background:var(--card);color:var(--tx);font-size:1.1rem;min-width:0;font-variant-numeric:tabular-nums;transition:border-color .2s,box-shadow .2s,transform .15s}
 .in input{padding-right:56px}
 input[type=number]{-moz-appearance:textfield;appearance:textfield}
 input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
 input:focus{outline:0;border-color:var(--ac);box-shadow:0 0 0 3px var(--acbg);transform:translateY(-1px)}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;min-height:30px}
-.chip{background:var(--bg);border:1px solid var(--bd);border-radius:999px;padding:5px 12px;font-size:.8rem;color:var(--mut);animation:pop .4s both}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;min-height:30px}
+.chip{background:var(--bg);border:1px solid var(--bd);border-radius:999px;padding:7px 14px;font-size:.88rem;color:var(--mut);animation:pop .4s both}
 .chip b{color:var(--tx)}.chip.hi{background:var(--acbg);border-color:transparent}.chip.hi b{color:var(--ac)}
-.hint{font-size:.8rem;color:var(--mut)}
+.hint{font-size:.88rem;color:var(--mut)}
 .flats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}
 .flat{background:var(--bg);border:1px solid var(--bd);border-top:3px solid var(--c);border-radius:14px;padding:12px;display:grid;gap:8px;transform:perspective(700px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .2s,box-shadow .25s}
 .flat:hover{box-shadow:0 14px 30px rgba(0,0,0,.18)}
@@ -79,7 +81,7 @@ input.name{font-weight:700;padding:8px 10px;border-left:4px solid var(--c)}
 .btn{flex:1;cursor:pointer;background:var(--card);border:1px solid var(--bd);color:var(--tx);border-radius:13px;padding:12px;font-size:.9rem;font-weight:600;transition:transform .15s,border-color .2s,opacity .3s,flex .4s,margin .4s,padding .4s}
 .btn:hover{transform:translateY(-1px);border-color:var(--ac)}.btn:active{transform:scale(.97)}
 .btn.hid{opacity:0;pointer-events:none;flex:0 0 0;width:0;padding-left:0;padding-right:0;margin-right:-10px;border-width:0;overflow:hidden}.btn.p{border-color:var(--ac);color:var(--ac)}
-.go{flex:2;position:relative;overflow:hidden;cursor:pointer;background:var(--ac);color:var(--onac);border:0;border-radius:13px;padding:13px;font-size:1rem;font-weight:700;transition:transform .15s,box-shadow .25s,filter .2s;box-shadow:0 8px 22px color-mix(in srgb,var(--ac) 35%,transparent)}
+.go{flex:2;position:relative;overflow:hidden;cursor:pointer;background:var(--ac);color:var(--onac);border:0;border-radius:13px;padding:15px;font-size:1.05rem;font-weight:700;transition:transform .15s,box-shadow .25s,filter .2s;box-shadow:0 8px 22px color-mix(in srgb,var(--ac) 35%,transparent)}
 .go::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);animation:shine 3.2s ease-in-out infinite;pointer-events:none}
 .go:hover{transform:translateY(-2px);box-shadow:0 12px 28px color-mix(in srgb,var(--ac) 50%,transparent);filter:brightness(1.07)}
 .go:active{transform:scale(.98)}
@@ -143,7 +145,7 @@ input.name{font-weight:700;padding:8px 10px;border-left:4px solid var(--c)}
 .cnt{display:flex;flex-direction:column;gap:12px;background:var(--acbg);border-radius:14px;padding:14px;margin-bottom:12px}
 .cnt b{display:block;font-size:.95rem;line-height:1.3}.cnt span{font-size:.8rem;color:var(--mut)}
 .seg{display:flex;gap:6px}
-.seg button{flex:1;height:42px;border-radius:11px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:700 1rem "Bricolage Grotesque",sans-serif;cursor:pointer;transition:transform .2s cubic-bezier(.34,1.56,.64,1),background .25s,color .25s,border-color .25s,box-shadow .25s}
+.seg button{flex:1;height:42px;border-radius:11px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:700 1rem "Bricolage Grotesque","Hind Siliguri",sans-serif;cursor:pointer;transition:transform .2s cubic-bezier(.34,1.56,.64,1),background .25s,color .25s,border-color .25s,box-shadow .25s}
 .seg button:hover{transform:translateY(-2px);border-color:var(--ac)}
 .seg button.on{background:var(--ac);color:var(--onac);border-color:var(--ac);transform:scale(1.08);box-shadow:0 6px 16px rgba(11,42,26,.25)}
 .flat.off{display:none}.flat.show{animation:pop .5s both}
@@ -153,16 +155,16 @@ input.name{font-weight:700;padding:8px 10px;border-left:4px solid var(--c)}
 .hhero::before{width:300px;height:300px;left:-90px;top:18%}.hhero::after{width:260px;height:260px;right:-70px;bottom:4%;animation-delay:-7s}
 .hhero>:not(.hchip){position:relative;z-index:1}
 .hchip{translate:var(--tx,0px) var(--ty,0px);transition:translate .35s cubic-bezier(.2,.8,.2,1)}
-.hb.big span{animation:nudge 2s ease-in-out infinite}
+.hb.big .ar{animation:nudge 2s ease-in-out infinite}
 @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
 .hmq{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;padding:18px 0}
-.hmq-t{display:flex;width:max-content;animation:mq 30s linear infinite}
+.hmq-t{display:flex;align-items:center;width:max-content;animation:mq 30s linear infinite}
 .hmq:hover .hmq-t{animation-play-state:paused}
 .hmq-t>*{margin-right:38px;white-space:nowrap}
-.hmq-t span{font:700 1.5rem "Bricolage Grotesque",sans-serif;letter-spacing:-.02em}
-.hmq-t i{font-style:normal;color:#15803d}
+.hmq-t span{font:700 1.5rem "Bricolage Grotesque","Hind Siliguri",sans-serif;letter-spacing:-.02em}
+.hmq-t i{font-style:normal;color:#15803d;display:block;line-height:1;font-size:1.1rem;transform:translateY(.08em)}
 @keyframes mq{to{transform:translateX(-50%)}}
-.hform.in>*{animation:fade .6s both}
+.hform.in>*{animation:fade 1.1s both}
 .hform.in>:nth-child(1){animation-delay:.3s}.hform.in>:nth-child(2){animation-delay:.55s}.hform.in>:nth-child(3){animation-delay:.8s}.hform.in>:nth-child(4){animation-delay:1s}.hform.in>:nth-child(5){animation-delay:1.15s}.hform.in>:nth-child(6){animation-delay:1.4s}
 .hstep i{transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
 .hstep.in i{animation:pop .6s .3s backwards}
@@ -181,17 +183,119 @@ input.name{font-weight:700;padding:8px 10px;border-left:4px solid var(--c)}
 @keyframes ring{0%{box-shadow:0 0 0 0 rgba(21,128,61,.4)}100%{box-shadow:0 0 0 13px rgba(21,128,61,0)}}
 input.tick{animation:tick .5s}
 @keyframes tick{0%{box-shadow:0 0 0 0 rgba(21,128,61,.5)}100%{box-shadow:0 0 0 10px rgba(21,128,61,0)}}
+/* ===== LANGUAGE ===== */
+header .lng{margin-left:auto}.lng+.tohome{margin-left:0}
+html[lang="bn"] h1,html[lang="bn"] h2,html[lang="bn"] h3,html[lang="bn"] .hh1,html[lang="bn"] .hh2,html[lang="bn"] .htag,html[lang="bn"] .tag,html[lang="bn"] .hfaq summary,html[lang="bn"] .hmq-t span,html[lang="bn"] .hlogo{letter-spacing:0!important}
+html[lang="bn"] .htag,html[lang="bn"] .tag{text-transform:none}
+html[lang="bn"] .hh1{font-size:clamp(2rem,5.6vw,4.2rem);line-height:1.28}
+html[lang="bn"] .hh2{line-height:1.35}
+html[lang="bn"] .hh1{max-width:900px}
+html[lang="bn"] body{line-height:1.65}
+@media (max-width:520px){.hlogo img{height:30px}.hnav{gap:8px}.hnav .hb.solid{padding:9px 11px;font-size:.76rem}.hnav .hb.solid .ar{display:none}}
+@media (max-width:480px){header h1{font-size:1.05rem}header .sub{display:none}}
+/* ===== BUTTON: background & text move ===== */
+.hb.roll{--roll:#c9f5c8;--t2:#0b2a1a;isolation:isolate}
+.hb.mint.roll{--roll:#0b2a1a;--t2:#fff}
+.roll::after{display:none}
+.roll .bg{position:absolute;left:50%;top:100%;width:125%;aspect-ratio:1;border-radius:50%;background:var(--roll);transform:translate(-50%,-50%) scale(0);transition:transform .65s cubic-bezier(.7,0,.2,1);z-index:-1;pointer-events:none}
+.roll:hover .bg,.roll:focus-visible .bg{transform:translate(-50%,-50%) scale(1)}
+.roll .rl{display:block;height:1.3em;overflow:hidden}
+.roll .rl-in{display:flex;flex-direction:column;transition:transform .6s cubic-bezier(.7,0,.2,1)}
+.roll .rl-in>span{display:block;height:1.3em;line-height:1.3em;white-space:nowrap}
+.roll .rl-in>span:last-child{color:var(--t2)}
+.roll:hover .rl-in,.roll:focus-visible .rl-in{transform:translateY(-50%)}
+.roll:hover .ar,.roll:focus-visible .ar{color:var(--t2)}
+html[lang="bn"] .roll .rl{height:1.65em}html[lang="bn"] .roll .rl-in>span{height:1.65em;line-height:1.65em}
+
+/* ===== STEP BUTTONS: same roll animation as home ===== */
+.go,.btn{display:flex;align-items:center;justify-content:center;gap:8px;position:relative;overflow:hidden;isolation:isolate;white-space:nowrap}
+.go{--roll:#c9f5c8;--t2:#0b2a1a}
+.btn{--roll:var(--ac);--t2:var(--onac)}
+.go.roll::after{display:none}
+.go.roll .ar,.btn.roll .ar{display:inline-block;transition:transform .4s cubic-bezier(.7,0,.2,1),color .3s}
+.go.roll .ar{animation:nudge 2s ease-in-out infinite}
+.btn.roll .ar{animation:nudgeL 2s ease-in-out infinite}
+.go.roll:hover .ar{transform:translateX(5px)}.btn.roll:hover .ar{transform:translateX(-5px)}
+@keyframes nudgeL{0%,100%{transform:translateX(0)}50%{transform:translateX(-5px)}}
+/* live progress (empty state of step 1) */
+.lv{flex:1 1 100%;display:grid;gap:10px}
+.lvh{display:flex;justify-content:space-between;align-items:center;gap:10px}.lvh b{font-size:.85rem;color:var(--ac);font-variant-numeric:tabular-nums}
+.lvbar{height:7px;border-radius:9px;background:var(--bd);overflow:hidden}
+.lvbar i{display:block;height:100%;width:0;border-radius:9px;background:linear-gradient(90deg,var(--ac),var(--c2));transition:width .5s cubic-bezier(.2,.8,.2,1)}
+.tip{margin:0;background:var(--acbg);border-radius:12px;padding:10px 12px;font-size:.84rem;line-height:1.5;color:var(--tx)}
+
+/* ===== step-card illustrations ===== */
+.hcs{--h:min(560px,72vh)}
+.hs-v{display:grid;gap:14px;justify-items:end;align-content:center}
+.ill{width:100%;max-width:400px}.ill svg{width:100%;height:auto;display:block}
+.hs-tip{margin-top:16px;padding:10px 14px;border-radius:12px;background:rgba(255,255,255,.55);font-size:.86rem;line-height:1.45;max-width:42ch}
+.hcs.c2 .hs-tip{background:#f1f6f2}.hcs.c3 .hs-tip{background:rgba(201,245,200,.12)}
+.hcs.act .hs-txt>:nth-child(5){transition-delay:.82s}.hcs.act .hs-v{transition-delay:.95s}
+.ill-svg .led,.ill-svg .glow{animation:ledp 1.8s ease-in-out infinite}
+@keyframes ledp{50%{opacity:.25}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes dash{to{stroke-dashoffset:-12}}
+.ill-svg .spin,.ill-svg .fan{transform-box:fill-box;transform-origin:center}
+.hcs.act .spin{animation:spin 16s linear infinite}
+.hcs.act .fan{animation:spin 1.3s linear infinite}
+.ill-svg .flow{stroke-dasharray:6 6}.hcs.act .flow{animation:dash .9s linear infinite}
+.ill.bars{background:rgba(255,255,255,.6);border-radius:16px;padding:14px 16px;display:grid;gap:9px}
+.ill.bars .mk-h{margin:0 0 2px}
+.ub{display:grid;grid-template-columns:54px 1fr auto;gap:10px;align-items:center;font-size:.85rem}
+.ub span{color:#4a5d52}.ub b{font-variant-numeric:tabular-nums}
+.ub i{display:block;height:10px;border-radius:9px;background:#e4e8e4;position:relative;overflow:hidden}
+.ub i::after{content:"";position:absolute;inset:0;width:0;border-radius:9px;background:linear-gradient(90deg,#15803d,#7fd99a);transition:width 1.4s cubic-bezier(.2,.8,.2,1) 1s}
+.hcs.act .ub i::after{width:var(--w)}
+@media (max-width:860px){.hcs{--h:min(700px,88vh)}.hs-tip{display:none}.ill svg{height:78px}.ill.bars{padding:10px 12px;gap:6px}.mock .mk-r:nth-child(n+5){display:none}.hcs .hs-t{font-size:1.5rem}.hs-v{gap:10px}}
+@media (prefers-reduced-motion:reduce){.hcs *{animation:none!important}}
+/* ===== PINNED STEPS (scroll-driven) ===== */
+.hlead,.hcta{animation:up 1.5s cubic-bezier(.16,1,.3,1) 1s both}
+.hpin{position:relative;height:400vh;background:#f4f7f4}
+.hpin-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+.hl{position:absolute;left:clamp(18px,3.2vw,40px);top:50%;transform:translateY(-50%);height:min(56vh,420px);width:3px;z-index:6}
+.hl-track{position:absolute;inset:0;background:#d4dfd7;border-radius:9px;overflow:hidden}
+.hl-track i{position:absolute;inset:0;background:linear-gradient(#15803d,#7fd99a);transform-origin:top;transform:scaleY(0)}
+.hl-dots{list-style:none;margin:0;padding:0;position:absolute;left:-12px;top:0;bottom:0;width:27px}
+.hl-dots li{position:absolute;left:0;width:27px;height:27px;border-radius:50%;background:#fff;border:2px solid #d4dfd7;display:grid;place-items:center;font:700 .72rem "Space Mono",monospace;color:#4a5d52;transform:translateY(-50%);transition:background .7s,color .7s,border-color .7s,transform .7s cubic-bezier(.34,1.56,.64,1)}
+.hl-dots li:nth-child(1){top:0}.hl-dots li:nth-child(2){top:33.333%}.hl-dots li:nth-child(3){top:66.666%}.hl-dots li:nth-child(4){top:100%}
+.hl-dots li.done{background:#c9f5c8;border-color:#15803d;color:#0b2a1a}
+.hl-dots li.on{background:#0b2a1a;border-color:#0b2a1a;color:#fff;transform:translateY(-50%) scale(1.25)}
+.hcs{--h:min(520px,66vh);position:absolute;left:max(clamp(64px,9vw,120px),calc((100% - 1040px)/2));right:max(clamp(14px,4vw,56px),calc((100% - 1040px)/2));height:var(--h);top:calc(50% - var(--h)/2 + 34px);border-radius:26px;padding:clamp(22px,3.2vw,42px);display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(20px,4vw,48px);align-items:center;will-change:transform;box-shadow:0 30px 80px rgba(11,42,26,.14);transform:translate3d(0,105%,0)}
+.hcs:first-of-type{transform:none}
+.hcs.c1{background:#dcfbd9}.hcs.c2{background:#fff;border:1px solid #e4e8e4}.hcs.c3{background:#0b2a1a;color:#e9fbe8}.hcs.c4{background:#c9f5c8}
+.hs-k{display:inline-block;background:rgba(11,42,26,.08);padding:6px 11px;font:700 .72rem "Space Mono","Hind Siliguri",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase}
+.hcs.c3 .hs-k{background:rgba(201,245,200,.16);color:#c9f5c8}
+.hcs .hs-t{font-size:clamp(1.6rem,3.2vw,2.5rem);line-height:1.08;letter-spacing:-.035em;font-weight:700;margin:16px 0 12px}
+.hs-txt p{font-size:clamp(.95rem,1.4vw,1.08rem);max-width:38ch;opacity:.82;margin:0}
+.hs-ul{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:9px;font-size:.95rem}
+.hs-ul li{display:flex;gap:10px;align-items:flex-start;line-height:1.4}
+.hs-ul li::before{content:"✓";flex:none;width:21px;height:21px;border-radius:50%;display:grid;place-items:center;font-size:.72rem;font-weight:800;background:rgba(11,42,26,.12);margin-top:1px}
+.hcs.c3 .hs-ul li::before{background:rgba(201,245,200,.2);color:#c9f5c8}
+.hcs .hs-txt>*,.hcs .hs-v{opacity:0;transform:translateY(34px);transition:opacity 1.3s cubic-bezier(.16,1,.3,1),transform 1.3s cubic-bezier(.16,1,.3,1)}
+.hcs.act .hs-txt>*,.hcs.act .hs-v{opacity:1;transform:none}
+.hcs.act .hs-txt>:nth-child(1){transition-delay:.15s}.hcs.act .hs-txt>:nth-child(2){transition-delay:.35s}.hcs.act .hs-txt>:nth-child(3){transition-delay:.55s}.hcs.act .hs-txt>:nth-child(4){transition-delay:.7s}.hcs.act .hs-v{transition-delay:.85s}
+.mock{background:#fff;color:#0b2a1a;border-radius:18px;padding:20px;border:1px solid #e4e8e4;box-shadow:0 24px 60px rgba(11,42,26,.16);width:100%;max-width:400px;margin-left:auto}
+.mk-h{font:700 .72rem "Space Mono","Hind Siliguri",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:#4a5d52;margin-bottom:8px}
+.mk-r{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px dashed #e4e8e4;font-size:.95rem}
+.mk-r span{color:#4a5d52}.mk-r b{font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-variant-numeric:tabular-nums}
+.mk-big{font:800 clamp(2.2rem,4.6vw,3rem)/1.1 "Bricolage Grotesque",sans-serif;color:#15803d;letter-spacing:-.03em;margin:6px 0 12px}
+.bat{height:28px;border-radius:999px;background:#e4e8e4;overflow:hidden;margin:8px 0 14px}
+.bat i{display:block;height:100%;width:94%;background:linear-gradient(90deg,#15803d,#7fd99a);border-radius:999px;transition:width 3.2s cubic-bezier(.2,.8,.2,1) .7s}
+.hcs.act .bat i{width:7%}
+html[lang="bn"] .hcs .hs-t{letter-spacing:0;line-height:1.3}
+@media (max-width:860px){.hcs{--h:min(600px,78vh);grid-template-columns:1fr;align-content:center;gap:16px;left:52px;right:14px;padding:22px}.hs-ul{margin-top:12px;gap:6px;font-size:.88rem}.hcs .hs-t{margin:12px 0 8px}.mock{margin:0;max-width:none;padding:16px}.mk-r{padding:7px 0;font-size:.85rem}.hpin{height:400vh}}
+@media (prefers-reduced-motion:reduce){.hcs .hs-txt>*,.hcs .hs-v{opacity:1;transform:none}.hlead,.hcta{animation:none}}
 /* ===== PAGE TRANSITION ===== */
 ::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}
 ::view-transition-old(root){z-index:1}::view-transition-new(root){z-index:2}
 /* ===== HOMEPAGE ===== */
-html{scroll-behavior:smooth}
+html{scroll-behavior:auto}
 #home[hidden],#app[hidden]{display:none!important}
 body.is-home{background:#fff}
 .tohome{margin-left:auto;white-space:nowrap;flex:none;background:var(--card);border:1px solid var(--bd);color:var(--tx);border-radius:999px;padding:8px 14px;font-size:.82rem;font-weight:600;cursor:pointer;transition:transform .2s,border-color .2s}
 .tohome:hover{transform:translateX(-3px);border-color:var(--tx)}
-.home{--ink:#0b2a1a;--mint:#c9f5c8;--mint2:#dcfbd9;--line:#e4e8e4;--mut:#4a5d52;color:var(--ink);background:#fff;font-family:"DM Sans",system-ui,sans-serif;overflow-x:hidden;line-height:1.5}
-.home h1,.home h2,.home h3,.hlogo,.hb,.hstat b,.hchip b{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif}
+.home{--ink:#0b2a1a;--mint:#c9f5c8;--mint2:#dcfbd9;--line:#e4e8e4;--mut:#4a5d52;color:var(--ink);background:#fff;font-family:"DM Sans","Hind Siliguri",system-ui,sans-serif;overflow-x:clip;line-height:1.5}
+.home h1,.home h2,.home h3,.hlogo,.hb,.hstat b,.hchip b{font-family:"Bricolage Grotesque","Hind Siliguri","DM Sans","Hind Siliguri",system-ui,sans-serif}
 .hnav{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px clamp(16px,4vw,40px);background:rgba(255,255,255,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
 .hnav.sc{box-shadow:0 6px 24px rgba(11,42,26,.08)}
 .hlogo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.35rem;letter-spacing:-.02em;color:var(--ink);text-decoration:none}
@@ -207,13 +311,13 @@ body.is-home{background:#fff}
 .hb.ghost{background:#fff;color:var(--ink);border-color:var(--line)}
 .hb.mint{background:var(--mint);color:var(--ink);border-color:var(--mint)}
 .hb:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(11,42,26,.22)}
-.hb span{transition:transform .25s}.hb:hover span{transform:translateX(5px)}
+.hb .ar{display:inline-block;transition:transform .4s cubic-bezier(.7,0,.2,1),color .3s}.hb:hover .ar{transform:translateX(5px)}
 .hb.big{font-size:1.1rem;padding:18px 30px;border-radius:10px}
 .hb.big::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);animation:shine 3.2s ease-in-out infinite;pointer-events:none}
 .hhero{position:relative;text-align:center;padding:clamp(64px,10vw,120px) 20px clamp(56px,8vw,96px)}
-.htag{display:inline-block;background:var(--mint);color:var(--ink);font:700 .72rem "Space Mono",ui-monospace,monospace;letter-spacing:.16em;padding:6px 11px;text-transform:uppercase}
+.htag{display:inline-block;background:var(--mint);color:var(--ink);font:700 .72rem "Space Mono","Hind Siliguri",ui-monospace,monospace;letter-spacing:.16em;padding:6px 11px;text-transform:uppercase}
 .hh1{font-size:clamp(2.6rem,7.4vw,5.5rem);line-height:1.02;letter-spacing:-.035em;font-weight:700;margin:0 auto;max-width:1000px}
-.hh1 .w{display:inline-block;opacity:0;transform:translateY(40px);animation:up .8s cubic-bezier(.2,.8,.2,1) forwards}
+.hh1 .w{display:inline-block;opacity:0;transform:translateY(40px);animation:up 1.5s cubic-bezier(.16,1,.3,1) forwards}
 .hlead{max-width:640px;margin:24px auto 0;font-size:clamp(1rem,2.2vw,1.2rem);color:var(--mut)}
 .hcta{margin-top:36px;display:flex;flex-direction:column;align-items:center;gap:12px}
 .hcta small{color:var(--mut);font-size:.82rem}
@@ -233,10 +337,10 @@ body.is-home{background:#fff}
 .hsteps,.hgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:46px;text-align:left}
 .hstep{border:1px solid var(--line);border-radius:16px;padding:24px;background:#fff;transition:transform .3s,box-shadow .3s,border-color .3s}
 .hstep:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(11,42,26,.1);border-color:var(--ink)}
-.hstep i{display:block;font:normal 800 3.2rem "Bricolage Grotesque",sans-serif;color:var(--mint);-webkit-text-stroke:1.6px var(--ink);line-height:1}
+.hstep i{display:block;font:normal 800 3.2rem "Bricolage Grotesque","Hind Siliguri",sans-serif;color:var(--mint);-webkit-text-stroke:1.6px var(--ink);line-height:1}
 .hstep h3,.hfeat h3{margin:14px 0 6px;font-size:1.15rem;letter-spacing:-.01em}
 .hstep p,.hfeat p{margin:0;font-size:.92rem;color:var(--mut)}
-.hform{margin-top:26px;background:var(--ink);color:#e9fbe8;border-radius:18px;padding:clamp(22px,4vw,40px);text-align:left;font-family:"Space Mono",ui-monospace,monospace;font-weight:700;font-size:clamp(.74rem,1.8vw,.98rem)}
+.hform{margin-top:26px;background:var(--ink);color:#e9fbe8;border-radius:18px;padding:clamp(22px,4vw,40px);text-align:left;font-family:"Space Mono","Hind Siliguri",ui-monospace,monospace;font-weight:700;font-size:clamp(.74rem,1.8vw,.98rem)}
 .hform div{padding:5px 0}.hform .k{color:#8fd9a0}.hform hr{border:0;border-top:1px dashed #2f6244;margin:16px 0}
 .hfeat{background:#f7f7f7;border-radius:16px;padding:26px;transition:transform .3s,background .3s}
 .hfeat:hover{transform:translateY(-5px);background:var(--mint2)}
@@ -247,10 +351,10 @@ body.is-home{background:#fff}
 .hstat span{font-size:.95rem;color:#244a35}
 .hfaq{max-width:780px;margin:44px auto 0;text-align:left}
 .hfaq details{border-bottom:1px solid var(--line);padding:6px 0}
-.hfaq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:16px 0;font:600 1.12rem "Bricolage Grotesque",sans-serif}
+.hfaq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:16px 0;font:600 1.12rem "Bricolage Grotesque","Hind Siliguri",sans-serif}
 .hfaq summary::after{content:"+";font-size:1.6rem;transition:transform .3s;line-height:1}
 .hfaq details[open] summary::after{transform:rotate(45deg)}
-.hfaq p{margin:0 0 18px;color:var(--mut);animation:up .4s both}
+.hfaq p{margin:0 0 18px;color:var(--mut);animation:up .9s both}
 .hcta2{position:relative;overflow:hidden;background:var(--ink);color:#fff;text-align:center;padding:clamp(70px,11vw,130px) 20px}
 .hcta2 .hh2{color:#fff;margin:0 auto 30px;max-width:760px}
 .hcta2 i{position:absolute;border-radius:50%;background:var(--mint);opacity:.1;animation:float 14s ease-in-out infinite}
@@ -259,7 +363,7 @@ body.is-home{background:#fff}
 .hfoot{padding:26px 20px;text-align:center;color:var(--mut);font-size:.85rem;border-top:1px solid var(--line)}
 .hfoot a{color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:3px;transition:color .2s}
 .hfoot a:hover{color:#15803d}
-.rv{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}
+.rv{opacity:0;transform:translateY(40px);transition:opacity 1.4s cubic-bezier(.16,1,.3,1),transform 1.4s cubic-bezier(.16,1,.3,1);transition-delay:var(--d,0s)}
 .rv.in{opacity:1;transform:none}
 .dr{stroke-dasharray:1000;stroke-dashoffset:1000}.in .dr{animation:draw 2.2s ease forwards}
 .flow{stroke-dasharray:6 8;animation:flow 1s linear infinite}
@@ -268,10 +372,133 @@ body.is-home{background:#fff}
 @keyframes flow{to{stroke-dashoffset:-14}}
 @keyframes pulse{50%{transform:scale(1.18)}}
 @keyframes bob{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-12px) rotate(var(--r,0deg))}}
-@media (max-width:1000px){.hchip{display:none}}
+@media (max-width:1180px){.hchip{display:none}}
 @media (max-width:860px){.hsplit{grid-template-columns:1fr}.hcard{grid-template-columns:1fr}.hpanel{min-height:360px}}
 @media (max-width:700px){.hlinks{display:none}.hb.ghost{display:none}.hstats{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.dr{stroke-dashoffset:0}.rv{opacity:1;transform:none}.hh1 .w{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+/* ===== THEME TOGGLE (sun / moon) ===== */
+header .thm{margin-left:0}.thm+.tohome{margin-left:0}
+header .lng{margin-left:auto}
+
+/* ===== HERO ILLUSTRATION: day / night ===== */
+.hpanel{transition:background .7s}
+.hpanel svg *{transition:fill .6s,stroke .6s}
+.hpanel .sun,.hpanel .moon,.hpanel .stars,.hpanel .cloud{transform-box:fill-box;transform-origin:center;transition:opacity .7s,transform .8s cubic-bezier(.34,1.2,.64,1)}
+.hpanel .moon,.hpanel .stars{opacity:0;transform:translateY(26px) scale(.85)}
+.hpanel .rays{transform-box:fill-box;transform-origin:center;animation:spin 24s linear infinite}
+.hpanel .stars path,.hpanel .stars circle{animation:twk 2.6s ease-in-out infinite}
+.hpanel .stars path:nth-child(2n){animation-delay:-1.1s}.hpanel .stars circle{animation-delay:-.5s}
+
+/* ===== DARK THEME ===== */
+html[data-theme="dark"]{color-scheme:dark;--bg:#0c1511;--card:#14221b;--tx:#e6f2ea;--mut:#9fb5a7;--bd:#25382d;--ac:#c9f5c8;--acbg:#193a28;--ok:#7fd99a;--warn:#f5b83d;--warnbg:#33290f;--c2:#7fd99a;--c3:#5d7466;--f1:#4ade80;--f2:#fbbf24;--f3:#7da7e0;--f4:#3cc4d0;--f5:#d98ad0;--f6:#bccb55;--onac:#0b2a1a;--onf:#06210f;--orb:.32;--sh:0 10px 30px rgba(0,0,0,.45)}
+html[data-theme="dark"] .orbs i{background:#1f6b45!important}
+html[data-theme="dark"] .logo{box-shadow:0 8px 22px rgba(0,0,0,.5)}
+html[data-theme="dark"] .go{--roll:#143222;--t2:#c9f5c8}
+html[data-theme="dark"] .flat:hover{box-shadow:0 14px 30px rgba(0,0,0,.5)}
+html[data-theme="dark"] .seg button.on{box-shadow:0 6px 16px rgba(0,0,0,.45)}
+html[data-theme="dark"] .modal{box-shadow:0 30px 80px rgba(0,0,0,.7)}
+html[data-theme="dark"] .ov{background:rgba(2,8,5,.7)}
+html[data-theme="dark"] .ind{box-shadow:0 2px 8px rgba(0,0,0,.5)}
+/* home */
+html[data-theme="dark"] body.is-home{background:#0b1410}
+html[data-theme="dark"] .home{--ink:#e6f2ea;--mint:#1d4b33;--mint2:#112a1d;--line:#233a2d;--mut:#9fb5a7;background:#0b1410}
+body.is-home,.home,.hnav,.hmq,.hside,.hpin{transition:background-color .5s,color .5s}
+.hnav{transition:background-color .5s,color .5s,box-shadow .3s}
+html[data-theme="dark"] .hnav{background:rgba(11,20,16,.88)}
+html[data-theme="dark"] .hnav.sc{box-shadow:0 6px 24px rgba(0,0,0,.5)}
+html[data-theme="dark"] .hb.solid{color:#0b1511}
+html[data-theme="dark"] .hb.roll{--roll:#1d4b33;--t2:#e6f2ea}
+html[data-theme="dark"] .hb.mint.roll{--roll:#e6f2ea;--t2:#0b1511}
+html[data-theme="dark"] .hb:hover{box-shadow:0 10px 24px rgba(0,0,0,.5)}
+html[data-theme="dark"] .hb.ghost,html[data-theme="dark"] .hchip,html[data-theme="dark"] .hcard,html[data-theme="dark"] .hstep{background:#14221b}
+html[data-theme="dark"] .hchip{box-shadow:0 14px 34px rgba(0,0,0,.45)}
+html[data-theme="dark"] .hstep:hover{box-shadow:0 18px 40px rgba(0,0,0,.5)}
+html[data-theme="dark"] .hmq{background:#0e1a14}
+html[data-theme="dark"] .hmq-t i{color:#4ade80}
+html[data-theme="dark"] .hside{background:#0f1c16}
+html[data-theme="dark"] .hfeat{background:#101e17}
+html[data-theme="dark"] .hfeat:hover{background:var(--mint2)}
+html[data-theme="dark"] .hfeat::after,html[data-theme="dark"] .hstep::after{background:radial-gradient(240px circle at var(--mx,50%) var(--my,50%),rgba(127,217,154,.16),transparent 70%)}
+html[data-theme="dark"] .hform,html[data-theme="dark"] .hcta2{background:#07100b}
+html[data-theme="dark"] .hform{border:1px solid #233a2d}
+html[data-theme="dark"] .hstat span{color:#a9d4b8}
+html[data-theme="dark"] .hfoot a:hover{color:#4ade80}
+html[data-theme="dark"] .hprog{background:linear-gradient(90deg,#1d4b33,#4ade80)}
+/* hero illustration at night */
+html[data-theme="dark"] .hpanel{background:linear-gradient(180deg,#0a1624,#12283a)}
+html[data-theme="dark"] .hpanel svg{stroke:#bfe3c9}
+html[data-theme="dark"] .hpanel svg [fill="#fff"]{fill:#0f2133}
+html[data-theme="dark"] .hpanel svg text{fill:#bfe3c9}
+html[data-theme="dark"] .hpanel svg rect[width="38"]{fill:#f5d77a;fill-opacity:.92}
+html[data-theme="dark"] .hpanel .bolt2{fill:#ffd966;filter:drop-shadow(0 0 8px #ffd966)}
+html[data-theme="dark"] .hpanel .sun,html[data-theme="dark"] .hpanel .cloud{opacity:0;transform:translateY(-26px) scale(.85)}
+html[data-theme="dark"] .hpanel .moon,html[data-theme="dark"] .hpanel .stars{opacity:1;transform:none}
+.hpanel svg rect[width="38"]{transition:fill .7s,fill-opacity .7s}
+/* pinned step cards */
+html[data-theme="dark"] .hpin{background:#0c1713}
+html[data-theme="dark"] .hl-track{background:#25382d}
+html[data-theme="dark"] .hl-dots li{background:#14221b;border-color:#2d4637;color:#9fb5a7}
+html[data-theme="dark"] .hl-dots li.done{background:#1d4b33;border-color:#4ade80;color:#c9f5c8}
+html[data-theme="dark"] .hl-dots li.on{background:#c9f5c8;border-color:#c9f5c8;color:#0b2a1a}
+html[data-theme="dark"] .hcs{box-shadow:0 30px 80px rgba(0,0,0,.55)}
+html[data-theme="dark"] .hcs.c1{background:#12301f}
+html[data-theme="dark"] .hcs.c2{background:#14221b;border-color:#25382d}
+html[data-theme="dark"] .hcs.c3{background:#050c08;border:1px solid #25382d}
+html[data-theme="dark"] .hcs.c4{background:#1a4a30}
+html[data-theme="dark"] .hs-k{background:rgba(255,255,255,.08)}
+html[data-theme="dark"] .hcs.c3 .hs-k{background:rgba(201,245,200,.16)}
+html[data-theme="dark"] .hs-ul li::before{background:rgba(255,255,255,.12)}
+html[data-theme="dark"] .hs-tip,html[data-theme="dark"] .hcs.c2 .hs-tip{background:rgba(255,255,255,.07)}
+html[data-theme="dark"] .hcs.c3 .hs-tip{background:rgba(201,245,200,.1)}
+html[data-theme="dark"] .mock{background:#0f1b15;color:#e6f2ea;border-color:#25382d;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+html[data-theme="dark"] .mk-h,html[data-theme="dark"] .mk-r span{color:#9fb5a7}
+html[data-theme="dark"] .mk-r{border-top-color:#25382d}
+html[data-theme="dark"] .mk-big{color:#4ade80}
+html[data-theme="dark"] .bat{background:#25382d}
+html[data-theme="dark"] .ill.bars{background:rgba(255,255,255,.07)}
+html[data-theme="dark"] .ub span{color:#9fb5a7}
+html[data-theme="dark"] .ub i{background:#25382d}
+html[data-theme="dark"] .hcs.c1 .ill-svg>rect:first-of-type{stroke:#7fd99a}
+html[data-theme="dark"] .hcs.c2 .ill-svg [fill="#dcfbd9"]{fill:#1d4b33}
+html[data-theme="dark"] .hcs.c2 .ill-svg circle[r="38"]{fill:#1b2e24;stroke:#2e4a3a}
+html[data-theme="dark"] .hlogo img{filter:invert(1) hue-rotate(180deg) brightness(1.15)}
+
+/* ===== NEUMORPHIC TOGGLES (language + day/night) ===== */
+.lng,.thm{--pill:#e8edf3;--in1:rgba(150,165,190,.55);--in2:rgba(255,255,255,.95);--kn1:#f7f9fc;--kn2:#dfe5ee;--ko:rgba(140,155,180,.55);--kh:rgba(255,255,255,.9);position:relative;flex:none;border:0;border-radius:999px;background:var(--pill);box-shadow:inset 3px 3px 7px var(--in1),inset -3px -3px 7px var(--in2);cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .5s,box-shadow .5s,transform .15s}
+html[data-theme="dark"] .lng,html[data-theme="dark"] .thm{--pill:#0f1a14;--in1:rgba(0,0,0,.7);--in2:rgba(70,100,82,.22);--kn1:#34503f;--kn2:#1f342a;--ko:rgba(0,0,0,.65);--kh:rgba(140,190,160,.18)}
+.lng:active,.thm:active{transform:scale(.96)}
+.lng:focus-visible,.thm:focus-visible{outline:2px solid var(--ac,#0b2a1a);outline-offset:3px}
+/* language: EN [ flag knob ] বাং  (active label highlighted, like the reference) */
+.lng{--tw:64px;--d:32px;display:inline-grid;grid-template-columns:auto var(--tw) auto;align-items:center;column-gap:8px;height:38px;padding:0;background:none;box-shadow:none;border-radius:0;font:800 .8rem "DM Sans","Hind Siliguri",sans-serif;--lc:#2b3550;--lf:#7d889c}
+html[data-theme="dark"] .lng{--lc:#e6f2ea;--lf:#4d6556}
+.lng::before{content:"";grid-column:2;grid-row:1;height:38px;border-radius:999px;background:var(--pill);box-shadow:inset 3px 3px 7px var(--in1),inset -3px -3px 7px var(--in2);transition:background .5s,box-shadow .5s}
+.lng::after{content:"";grid-column:2;grid-row:1;justify-self:start;align-self:center;margin-left:3px;width:var(--d);height:var(--d);border-radius:50%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3CclipPath id='c'%3E%3Ccircle cx='30' cy='30' r='30'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23c)'%3E%3Crect width='60' height='60' fill='%23012169'/%3E%3Cpath d='M0 0L60 60M60 0L0 60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M0 0L60 60M60 0L0 60' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30 0V60M0 30H60' stroke='%23fff' stroke-width='16'/%3E%3Cpath d='M30 0V60M0 30H60' stroke='%23C8102E' stroke-width='9'/%3E%3C/g%3E%3C/svg%3E") center/100% 100% no-repeat;box-shadow:3px 3px 8px var(--ko),-2px -2px 6px var(--kh);transform:translateX(0);transition:transform .6s cubic-bezier(.45,.05,.25,1)}
+.lng[data-l="bn"]::after{transform:translateX(calc(var(--tw) - var(--d) - 6px));background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23006a4e'/%3E%3Ccircle cx='30' cy='30' r='13' fill='%23f42a41'/%3E%3C/svg%3E");animation:lngToBn .6s linear}
+.lng[data-l="en"]::after{animation:lngToEn .6s linear}
+@keyframes lngToBn{0%{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3CclipPath id='c'%3E%3Ccircle cx='30' cy='30' r='30'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23c)'%3E%3Crect width='60' height='60' fill='%23012169'/%3E%3Cpath d='M0 0L60 60M60 0L0 60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M0 0L60 60M60 0L0 60' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30 0V60M0 30H60' stroke='%23fff' stroke-width='16'/%3E%3Cpath d='M30 0V60M0 30H60' stroke='%23C8102E' stroke-width='9'/%3E%3C/g%3E%3C/svg%3E")}49%{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3CclipPath id='c'%3E%3Ccircle cx='30' cy='30' r='30'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23c)'%3E%3Crect width='60' height='60' fill='%23012169'/%3E%3Cpath d='M0 0L60 60M60 0L0 60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M0 0L60 60M60 0L0 60' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30 0V60M0 30H60' stroke='%23fff' stroke-width='16'/%3E%3Cpath d='M30 0V60M0 30H60' stroke='%23C8102E' stroke-width='9'/%3E%3C/g%3E%3C/svg%3E")}50%{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23006a4e'/%3E%3Ccircle cx='30' cy='30' r='13' fill='%23f42a41'/%3E%3C/svg%3E")}100%{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23006a4e'/%3E%3Ccircle cx='30' cy='30' r='13' fill='%23f42a41'/%3E%3C/svg%3E")}}
+@keyframes lngToEn{0%{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23006a4e'/%3E%3Ccircle cx='30' cy='30' r='13' fill='%23f42a41'/%3E%3C/svg%3E")}49%{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23006a4e'/%3E%3Ccircle cx='30' cy='30' r='13' fill='%23f42a41'/%3E%3C/svg%3E")}50%{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3CclipPath id='c'%3E%3Ccircle cx='30' cy='30' r='30'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23c)'%3E%3Crect width='60' height='60' fill='%23012169'/%3E%3Cpath d='M0 0L60 60M60 0L0 60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M0 0L60 60M60 0L0 60' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30 0V60M0 30H60' stroke='%23fff' stroke-width='16'/%3E%3Cpath d='M30 0V60M0 30H60' stroke='%23C8102E' stroke-width='9'/%3E%3C/g%3E%3C/svg%3E")}100%{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3CclipPath id='c'%3E%3Ccircle cx='30' cy='30' r='30'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23c)'%3E%3Crect width='60' height='60' fill='%23012169'/%3E%3Cpath d='M0 0L60 60M60 0L0 60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M0 0L60 60M60 0L0 60' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30 0V60M0 30H60' stroke='%23fff' stroke-width='16'/%3E%3Cpath d='M30 0V60M0 30H60' stroke='%23C8102E' stroke-width='9'/%3E%3C/g%3E%3C/svg%3E")}}
+.lng span{position:relative;z-index:1;display:block;line-height:1;white-space:nowrap;color:var(--lf);transition:color .35s}
+.lng span:first-child{grid-column:1;grid-row:1;text-align:right}
+.lng span:last-child{grid-column:3;grid-row:1;text-align:left}
+.lng:not([data-l="bn"]) span:first-child,.lng[data-l="bn"] span:last-child{color:var(--lc)}
+/* day / night: sun knob <-> moon knob */
+.thm{--w:76px;--h:38px;--k:32px;width:var(--w);height:var(--h);padding:0}
+.thm-cl,.thm-st{display:none}
+.thm-k{position:absolute;z-index:2;top:50%;left:3px;width:var(--k);height:var(--k);margin-top:calc(var(--k)/-2);border-radius:50%;background:linear-gradient(145deg,var(--kn1),var(--kn2));box-shadow:3px 3px 8px var(--ko),-2px -2px 6px var(--kh);transition:transform .6s cubic-bezier(.34,1.4,.64,1)}
+.thm-k::before,.thm-k::after{content:"";position:absolute;inset:6px;border-radius:0;background:none center/contain no-repeat;transition:opacity .4s,transform .6s cubic-bezier(.34,1.4,.64,1)}
+.thm-k::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238b95aa' stroke-width='1.7' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='4.2'/%3E%3Cpath d='M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3L7 7M17 17l1.7 1.7M5.3 18.7L7 17M17 7l1.7-1.7'/%3E%3C/svg%3E");opacity:1}
+.thm-k::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c9f5c8' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M19 14.5A7.5 7.5 0 0 1 9.5 5a7.5 7.5 0 1 0 9.5 9.5z'/%3E%3Cpath d='M17.5 3.2l.5 1.3 1.3.5-1.3.5-.5 1.3-.5-1.3-1.3-.5 1.3-.5zM20.5 8.6l.35.9.9.35-.9.35-.35.9-.35-.9-.9-.35.9-.35z' fill='%23c9f5c8' stroke-width='.6'/%3E%3C/svg%3E");opacity:0;transform:rotate(-60deg) scale(.6)}
+html[data-theme="dark"] .thm-k{transform:translateX(calc(var(--w) - var(--k) - 6px))}
+html[data-theme="dark"] .thm-k::before{opacity:0;transform:rotate(60deg) scale(.6)}
+html[data-theme="dark"] .thm-k::after{opacity:1;transform:none}
+@media (max-width:520px){.thm{--w:66px;--h:34px;--k:28px}.lng{--tw:54px;--d:28px;column-gap:5px;height:34px;font-size:.72rem}.lng::before{height:34px}}
+
+.lng span:last-child{font-weight:800;font-size:.86rem}
+html[lang="bn"] .lng span{font-family:"Hind Siliguri","DM Sans",sans-serif}
+@media (max-width:520px){.lng{column-gap:0}.lng span{display:none}.lng{grid-template-columns:var(--tw)}.lng::before,.lng::after{grid-column:1}}
+@media (max-width:520px){.hnav .hb.solid{padding:8px 11px;font-size:.74rem}.hnav .hbtns{gap:6px}.hnav{gap:6px;padding-left:12px;padding-right:12px}}
+html[data-theme="dark"] .logo svg path{fill:#0b2a1a}
 </style>
 </head>
 <body class="is-home">
@@ -280,7 +507,7 @@ body.is-home{background:#fff}
   <nav class="hnav" id="hnav"><div class="hprog" id="hprog"></div>
     <a class="hlogo" href="#top" aria-label="WattSplit home"><img src="data:image/png;base64,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" alt="WattSplit" width="126" height="44"></a>
     <div class="hlinks"><a href="#what">What it is</a><a href="#how">How it works</a><a href="#use">What it's for</a><a href="#faq">FAQ</a></div>
-    <div class="hbtns"><a class="hb ghost" href="#how">See how it works</a><button class="hb solid" data-calc>Calculate your bill <span>→</span></button></div>
+    <div class="hbtns"><button class="lng" data-lang-toggle aria-label="Language"><span class="on">EN</span><span>বাং</span></button><button class="thm" data-theme-toggle type="button" role="switch" aria-checked="false" aria-label="Light / Dark"><span class="thm-cl" aria-hidden="true"></span><span class="thm-st" aria-hidden="true"><i></i><i></i><i></i></span><span class="thm-k" aria-hidden="true"></span></button><a class="hb ghost" href="#how">See how it works</a><button class="hb solid" data-calc>Calculate <span>→</span></button></div>
   </nav>
 
   <section class="hhero" id="top">
@@ -298,7 +525,7 @@ body.is-home{background:#fff}
     <div class="hpanel rv">
       <svg viewBox="0 0 460 340" fill="none" stroke="#0b2a1a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path class="dr" d="M16 296H444"/>
-        <path class="dr" d="M40 66c18-14 40-12 52 0M70 54c14-12 34-8 42 4"/>
+        <g class="cloud"><path class="dr" d="M40 66c18-14 40-12 52 0M70 54c14-12 34-8 42 4"/></g><g class="sun" stroke-width="2.4"><circle cx="420" cy="62" r="17" fill="#ffd966"/><g class="rays"><path d="M420 34v-8M420 98v8M392 62h-8M448 62h8M400 42l-6-6M440 82l6 6M440 42l6-6M400 82l-6 6"/></g></g><g class="moon" stroke-width="2.4"><path d="M430 42a19 19 0 1 0 6 34a15 15 0 0 1 -6 -34z" fill="#f5efc8"/></g><g class="stars" stroke="#f5efc8" stroke-width="2"><path d="M54 40v10M49 45h10"/><path d="M116 26v8M112 30h8"/><path d="M34 96v6M31 99h6"/><path d="M150 76v6M147 79h6"/><path d="M340 26v8M336 30h8"/><path d="M392 106v6M389 109h6"/><circle cx="92" cy="60" r="1.6" fill="#f5efc8"/><circle cx="238" cy="30" r="1.6" fill="#f5efc8"/><circle cx="440" cy="130" r="1.6" fill="#f5efc8"/></g>
         <rect class="dr" x="200" y="64" width="176" height="232" fill="#fff"/>
         <path class="dr" d="M200 141H376M200 218H376"/>
         <rect class="dr" x="224" y="86" width="38" height="38"/><rect class="dr" x="314" y="86" width="38" height="38"/>
@@ -323,16 +550,35 @@ body.is-home{background:#fff}
     </div>
   </section>
 
-  <section class="hsec" id="how">
+  <section class="hsec" id="how" style="padding-bottom:clamp(28px,5vw,56px)">
     <span class="htag rv">How it works</span>
     <h2 class="hh2 rv" style="--d:.06s">Four readings. One fair number.</h2>
-    <div class="hsteps">
-      <div class="hstep rv"><i>1</i><h3>Note the readings after recharge</h3><p>Write down the main meter reading and balance, plus every sub-meter reading.</p></div>
-      <div class="hstep rv" style="--d:.1s"><i>2</i><h3>Wait until the balance runs low</h3><p>Use electricity as normal until it's time for the next top-up.</p></div>
-      <div class="hstep rv" style="--d:.2s"><i>3</i><h3>Note them all again</h3><p>Record the main balance, main reading and each sub-meter reading once more.</p></div>
-      <div class="hstep rv" style="--d:.3s"><i>4</i><h3>Enter them in WattSplit</h3><p>Get the rate per kWh and your exact share of the bill instantly.</p></div>
+  </section>
+
+  <section class="hpin" id="steps">
+    <div class="hpin-stage">
+      <div class="hl" aria-hidden="true"><div class="hl-track"><i id="hlfill"></i></div><ol class="hl-dots"><li>1</li><li>2</li><li>3</li><li>4</li></ol></div>
+      <article class="hcs c1">
+        <div class="hs-txt"><span class="hs-k">Step 1</span><h3 class="hs-t">Note the readings after recharge</h3><p>Write down the main meter reading and balance, plus every sub-meter reading.</p><ul class="hs-ul"><li>Main meter reading &amp; balance</li><li>Every sub-meter reading</li><li>Do it right after you recharge</li></ul><div class="hs-tip">Tip: take a photo of every meter right after recharging so nothing gets mixed up.</div></div>
+        <div class="hs-v"><div class="ill"><svg viewBox="0 0 400 120" class="ill-svg" aria-hidden="true"><rect x="10" y="8" width="150" height="104" rx="14" fill="#0b2a1a" stroke="#0b2a1a" stroke-width="2"/><rect x="22" y="20" width="126" height="38" rx="7" fill="#c9f5c8"/><text x="85" y="45" text-anchor="middle" font-family="Space Mono,monospace" font-size="17" font-weight="700" fill="#0b2a1a">2,199.84</text><path d="M44 68 l-11 17 h9 l-4 15 l13 -19 h-9 z" fill="#c9f5c8"/><circle class="led" cx="92" cy="84" r="5" fill="#7fd99a"/><circle cx="110" cy="84" r="5" fill="#c9f5c8" opacity=".45"/><circle cx="128" cy="84" r="5" fill="#c9f5c8" opacity=".45"/><rect x="186" y="14" width="94" height="92" rx="10" fill="#fff" stroke="#cfe0d3"/><path d="M197 39 l5 5 l9 -11" fill="none" stroke="#15803d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="222" y="36" width="48" height="7" rx="3.5" fill="#d4dfd7"/><path d="M197 61 l5 5 l9 -11" fill="none" stroke="#15803d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="222" y="58" width="40" height="7" rx="3.5" fill="#d4dfd7"/><circle cx="204" cy="84" r="6" fill="none" stroke="#9db3a5" stroke-width="2"/><rect x="222" y="80" width="44" height="7" rx="3.5" fill="#d4dfd7"/><circle class="spin" cx="340" cy="60" r="42" fill="none" stroke="#15803d" stroke-width="2.5" stroke-dasharray="5 7"/><circle cx="340" cy="60" r="31" fill="#15803d"/><text x="340" y="73" text-anchor="middle" font-family="Bricolage Grotesque,Hind Siliguri,sans-serif" font-size="36" font-weight="800" fill="#fff">৳</text><path d="M340 20 v-8 m-5 5 l5 -5 l5 5" fill="none" stroke="#15803d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".0"/></svg></div><div class="mock"><div class="mk-h">After recharge</div><div class="mk-r"><span>Main reading</span><b>2,199.84 kWh</b></div><div class="mk-r"><span>Balance</span><b>৳ 1,404.35</b></div><div class="mk-r"><span>Flat 1</span><b>788.35</b></div><div class="mk-r"><span>Flat 2</span><b>234.00</b></div><div class="mk-r"><span>Flat 3</span><b>412.10</b></div></div></div>
+      </article>
+      <article class="hcs c2">
+        <div class="hs-txt"><span class="hs-k">Step 2</span><h3 class="hs-t">Wait until the balance runs low</h3><p>Use electricity as normal until it's time for the next top-up.</p><ul class="hs-ul"><li>Nothing to track while you wait</li><li>Everyone uses power as normal</li><li>Note the balance just before the next top-up</li></ul><div class="hs-tip">Tip: no need to check every day — one reading at each end is enough.</div></div>
+        <div class="hs-v"><div class="ill"><svg viewBox="0 0 400 120" class="ill-svg" aria-hidden="true"><path d="M18 64 L90 14 L162 64" fill="#dcfbd9" stroke="#15803d" stroke-width="3" stroke-linejoin="round"/><rect x="32" y="62" width="116" height="50" rx="6" fill="#dcfbd9" stroke="#15803d" stroke-width="3"/><rect x="76" y="80" width="26" height="32" rx="4" fill="#15803d"/><rect x="44" y="72" width="22" height="20" rx="3" fill="#fff" stroke="#15803d" stroke-width="2"/><circle class="glow" cx="55" cy="82" r="6" fill="#f5b83d"/><rect x="112" y="72" width="22" height="20" rx="3" fill="#fff" stroke="#15803d" stroke-width="2"/><circle class="glow" cx="123" cy="82" r="6" fill="#f5b83d"/><path class="flow" d="M162 88 H236" stroke="#15803d" stroke-width="3" stroke-linecap="round" fill="none"/><circle cx="290" cy="60" r="38" fill="#f1f6f2" stroke="#d4dfd7" stroke-width="2"/><g class="fan" fill="#15803d"><ellipse cx="290" cy="38" rx="8" ry="17"/><ellipse cx="290" cy="82" rx="8" ry="17"/><ellipse cx="268" cy="60" rx="17" ry="8"/><ellipse cx="312" cy="60" rx="17" ry="8"/></g><circle cx="290" cy="60" r="7" fill="#0b2a1a"/><path d="M366 30 l-13 22 h11 l-5 20 l17 -26 h-11 z" fill="#f5b83d" stroke="#0b2a1a" stroke-width="2" stroke-linejoin="round"/></svg></div><div class="mock"><div class="mk-h">Balance left</div><div class="bat"><i></i></div><div class="mk-r"><span>After recharge</span><b>৳ 1,404.35</b></div><div class="mk-r"><span>Balance left</span><b>৳ 128.52</b></div></div></div>
+      </article>
+      <article class="hcs c3">
+        <div class="hs-txt"><span class="hs-k">Step 3</span><h3 class="hs-t">Note them all again</h3><p>Record the main balance, main reading and each sub-meter reading once more.</p><ul class="hs-ul"><li>Main meter reading &amp; balance</li><li>Each sub-meter reading again</li><li>Same meters, same order as Step 1</li></ul><div class="hs-tip">Tip: take the readings before you recharge again, while the balance is still low.</div></div>
+        <div class="hs-v"><div class="ill"><svg viewBox="0 0 400 120" class="ill-svg" aria-hidden="true"><rect x="10" y="8" width="150" height="104" rx="14" fill="#1d4d33" stroke="#c9f5c8" stroke-width="2"/><rect x="22" y="20" width="126" height="38" rx="7" fill="#c9f5c8"/><text x="85" y="45" text-anchor="middle" font-family="Space Mono,monospace" font-size="17" font-weight="700" fill="#0b2a1a">1,980.45</text><path d="M44 68 l-11 17 h9 l-4 15 l13 -19 h-9 z" fill="#c9f5c8"/><circle class="led" cx="92" cy="84" r="5" fill="#f5b83d"/><circle cx="110" cy="84" r="5" fill="#c9f5c8" opacity=".45"/><circle cx="128" cy="84" r="5" fill="#c9f5c8" opacity=".45"/><rect x="186" y="14" width="94" height="92" rx="10" fill="#fff" stroke="#cfe0d3"/><path d="M197 39 l5 5 l9 -11" fill="none" stroke="#15803d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="222" y="36" width="48" height="7" rx="3.5" fill="#d4dfd7"/><path d="M197 61 l5 5 l9 -11" fill="none" stroke="#15803d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="222" y="58" width="40" height="7" rx="3.5" fill="#d4dfd7"/><circle cx="204" cy="84" r="6" fill="none" stroke="#9db3a5" stroke-width="2"/><rect x="222" y="80" width="44" height="7" rx="3.5" fill="#d4dfd7"/><circle class="spin" cx="340" cy="60" r="42" fill="none" stroke="#f5b83d" stroke-width="2.5" stroke-dasharray="5 7"/><circle cx="340" cy="60" r="31" fill="#f5b83d"/><text x="340" y="73" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-size="38" font-weight="800" fill="#0b2a1a">!</text></svg></div><div class="mock"><div class="mk-h">When used up</div><div class="mk-r"><span>Main reading</span><b>1,980.45 kWh</b></div><div class="mk-r"><span>Balance</span><b>৳ 128.52</b></div><div class="mk-r"><span>Flat 1</span><b>761.61</b></div><div class="mk-r"><span>Flat 2</span><b>133.00</b></div><div class="mk-r"><span>Flat 3</span><b>366.50</b></div></div></div>
+      </article>
+      <article class="hcs c4">
+        <div class="hs-txt"><span class="hs-k">Step 4</span><h3 class="hs-t">Enter them in WattSplit</h3><p>Get the rate per kWh and your exact share of the bill instantly.</p><ul class="hs-ul"><li>Enter the four main-meter values</li><li>Add your sub-meter readings</li><li>See everyone's share and the steps</li></ul><div class="hs-tip">Tip: your result is only as accurate as your readings — double-check each number.</div></div>
+        <div class="hs-v"><div class="ill bars"><div class="mk-h">Usage per flat</div><div class="ub"><span>Flat 1</span><i style="--w:26%"></i><b>26.74</b></div><div class="ub"><span>Flat 2</span><i style="--w:100%"></i><b>101.00</b></div><div class="ub"><span>Flat 3</span><i style="--w:45%"></i><b>45.60</b></div></div><div class="mock"><div class="mk-h">Rate per kWh</div><div class="mk-big">৳ 5.8154</div><div class="mk-r"><span>Money spent</span><b>৳ 1,275.83</b></div><div class="mk-r"><span>kWh used</span><b>219.39</b></div><div class="mk-r"><span>Your usage</span><b>26.74 kWh</b></div><div class="mk-r"><span>Your bill</span><b>৳ 155.50</b></div></div></div>
+      </article>
     </div>
-    <div class="hform rv">
+  </section>
+
+  <section class="hsec" style="padding-top:clamp(48px,7vw,90px);padding-bottom:0">
+    <div class="hform rv" style="margin-top:0">
       <div><span class="k">Money spent</span> = Previous balance − Current balance</div>
       <div><span class="k">Rate per kWh</span> = Money spent ÷ Main meter kWh used</div>
       <div><span class="k">Your bill</span> = Your kWh used × Rate per kWh</div>
@@ -385,7 +631,7 @@ body.is-home{background:#fff}
   <header>
     <div class="logo"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6z" fill="#c9f5c8"/></svg></div>
     <div><h1>Electricity Bill Calculator</h1><p class="sub">Enter readings · Calculate · See your bill</p></div>
-  <button class="tohome" id="tohome">← Home</button></header>
+  <button class="lng" data-lang-toggle aria-label="Language"><span class="on">EN</span><span>বাং</span></button><button class="thm" data-theme-toggle type="button" role="switch" aria-checked="false" aria-label="Light / Dark"><span class="thm-cl" aria-hidden="true"></span><span class="thm-st" aria-hidden="true"><i></i><i></i><i></i></span><span class="thm-k" aria-hidden="true"></span></button><button class="tohome" id="tohome">← Home</button></header>
 
   <nav class="stepper" id="stepper">
     <div class="track"><i id="fill"></i></div>
@@ -422,7 +668,7 @@ body.is-home{background:#fff}
 </div>
 
 <div class="ov" id="ov" aria-hidden="true"><div class="modal" id="modal" role="dialog" aria-label="Your bill">
-  <div class="wbar"><span class="dots"><button class="dot" id="mclose" aria-label="Close"></button><u></u><u></u></span><span class="wt">Your bill</span><span style="width:60px"></span></div>
+  <div class="wbar"><span class="dots"><button class="dot" id="mclose" aria-label="Close"></button><u></u><u></u></span><span class="wt">Your bill</span><button class="lng" data-lang-toggle aria-label="Language"><span class="on">EN</span><span>বাং</span></button><button class="thm" data-theme-toggle type="button" role="switch" aria-checked="false" aria-label="Light / Dark"><span class="thm-cl" aria-hidden="true"></span><span class="thm-st" aria-hidden="true"><i></i><i></i><i></i></span><span class="thm-k" aria-hidden="true"></span></button></div>
   <div class="tabs" id="tabs"><i class="ind" id="ind"></i><button class="on">Summary</button><button>Breakdown</button><button>Steps</button></div>
   <div class="mbody"><div class="tp on" id="t0"></div><div class="tp" id="t1"></div><div class="tp" id="t2"></div></div>
   <div class="mfoot"><button class="btn" id="copy">Copy</button><button class="btn p" id="ncycle">✔ Start new cycle</button></div>
@@ -433,7 +679,34 @@ body.is-home{background:#fff}
 </div>
 <script>
 const $=id=>document.getElementById(id);
-const MAX=6,defaults=["Me","Flat 2","Flat 3","Flat 4","Flat 5","Flat 6"];let count=3;
+/* ---- language (EN / বাংলা) ---- */
+let lang="en";try{lang=localStorage.getItem("wattsplit-lang")==="bn"?"bn":"en";}catch(e){}
+const BN={"Calculate":"হিসাব করুন","What it is": "এটি কী", "How it works": "কীভাবে কাজ করে", "What it's for": "কী কাজে লাগে", "FAQ": "প্রশ্নোত্তর", "See how it works": "কীভাবে কাজ করে দেখুন", "Calculate your bill": "বিল হিসাব করুন", "Transforming the way shared meters are split, measured, & paid.": "শেয়ার্ড মিটারের বিল ভাগ, মাপা ও পরিশোধ এখন সহজ ও নির্ভুল।", "WattSplit works out exactly how much of a shared prepaid meter's bill is yours, based on the kWh your own sub-meter recorded. No guesswork, no arguments.": "শেয়ার্ড প্রিপেইড মিটারের বিলের কতটুকু আপনার, WattSplit ঠিক সেটাই হিসাব করে দেয় — আপনার নিজের সাব-মিটারে রেকর্ড হওয়া kWh অনুযায়ী। আন্দাজ নয়, ঝগড়াও নয়।", "Free · No sign-up · Works on your phone": "ফ্রি · সাইন-আপ লাগে না · ফোনেও চলে", "Rate per kWh": "প্রতি kWh রেট", "Your usage": "আপনার ব্যবহার", "Your bill": "আপনার বিল", "Main meter": "মেইন মিটার", "Fair by usage": "ব্যবহার অনুযায়ী ন্যায্য ভাগ", "Live rate per kWh": "লাইভ রেট প্রতি kWh", "Up to 6 sub-meters": "৬টি পর্যন্ত সাব-মিটার", "Private in your browser": "আপনার ব্রাউজারেই সুরক্ষিত", "One meter on the wall. Several homes paying for it.": "দেয়ালে একটাই মিটার, বিল দেয় কয়েকটা পরিবার।", "A calculator built for shared prepaid meters.": "শেয়ার্ড প্রিপেইড মিটারের জন্য বানানো ক্যালকুলেটর।", "When flats share one main meter that everyone tops up together, someone has to work out who owes what. WattSplit does that maths in seconds.": "একটা মেইন মিটারে সবাই মিলে রিচার্জ করলে কে কত দেবে তার হিসাব কাউকে না কাউকে করতে হয়। WattSplit সেই হিসাব কয়েক সেকেন্ডেই করে দেয়।", "The main meter": "মেইন মিটার", "Tracks the total kWh and balance spent since the last recharge.": "শেষ রিচার্জের পর থেকে মোট কত kWh ও কত টাকা খরচ হয়েছে তার হিসাব রাখে।", "Your sub-meter": "আপনার সাব-মিটার", "Records only what your flat actually used.": "শুধু আপনার ফ্ল্যাট যতটুকু ব্যবহার করেছে তা-ই রেকর্ড করে।", "Four readings. One fair number.": "চারটি রিডিং। একটি ন্যায্য হিসাব।", "Note the readings after recharge": "রিচার্জের পর রিডিং লিখে রাখুন", "Write down the main meter reading and balance, plus every sub-meter reading.": "মেইন মিটারের রিডিং ও ব্যালেন্স এবং প্রতিটি সাব-মিটারের রিডিং লিখে রাখুন।", "Wait until the balance runs low": "ব্যালেন্স কমে আসা পর্যন্ত অপেক্ষা করুন", "Use electricity as normal until it's time for the next top-up.": "পরের রিচার্জের সময় না আসা পর্যন্ত স্বাভাবিকভাবে বিদ্যুৎ ব্যবহার করুন।", "Note them all again": "সবকিছু আবার লিখে রাখুন", "Record the main balance, main reading and each sub-meter reading once more.": "মেইন ব্যালেন্স, মেইন রিডিং ও প্রতিটি সাব-মিটারের রিডিং আরেকবার লিখুন।", "Enter them in WattSplit": "WattSplit-এ বসান", "Get the rate per kWh and your exact share of the bill instantly.": "সঙ্গে সঙ্গে প্রতি kWh রেট ও আপনার বিলের সঠিক অংশ পেয়ে যান।", "Money spent": "খরচ হওয়া টাকা", "= Previous balance − Current balance": "= আগের ব্যালেন্স − এখনকার ব্যালেন্স", "= Money spent ÷ Main meter kWh used": "= খরচ হওয়া টাকা ÷ মেইন মিটারের kWh", "= Your kWh used × Rate per kWh": "= আপনার kWh × প্রতি kWh রেট", "Example:": "উদাহরণ:", "৳1,275.83 ÷ 219.39 kWh = ৳5.8154 per kWh": "৳1,275.83 ÷ 219.39 kWh = ৳5.8154 প্রতি kWh", "What it's used for": "কী কাজে লাগে", "Everything you need to settle up, without the argument.": "ঝগড়া ছাড়াই হিসাব মেটানোর সবকিছু।", "Every flat pays for the kWh it actually used, nothing more.": "প্রতিটি ফ্ল্যাট যতটুকু kWh ব্যবহার করেছে ঠিক ততটুকুর টাকাই দেয়।", "Live rate": "লাইভ রেট", "Watch the ৳ per kWh update as you type your readings.": "রিডিং লেখার সাথে সাথে প্রতি kWh টাকার রেট বদলাতে দেখুন।", "Clear breakdown": "পরিষ্কার ভাগ-বিভাজন", "A chart and bars show every flat's share of the bill.": "চার্ট ও বারে প্রতিটি ফ্ল্যাটের অংশ দেখানো হয়।", "Shows the working": "হিসাবের ধাপ দেখায়", "Step-by-step maths, so nobody has to just take your word for it.": "ধাপে ধাপে হিসাব, যাতে কাউকে শুধু আপনার কথায় ভরসা করতে না হয়।", "Remembers readings": "রিডিং মনে রাখে", "Start a new cycle and the last readings carry over automatically.": "নতুন সাইকেল শুরু করলে আগের রিডিং নিজে থেকেই বসে যায়।", "Catches mistakes": "ভুল ধরিয়ে দেয়", "Warns you when the sub-meters don't add up to the main meter.": "সাব-মিটারের যোগফল মেইন মিটারের সাথে না মিললে সতর্ক করে।", "readings to enter": "রিডিং দিতে হবে", "seconds to your answer": "সেকেন্ডে উত্তর", "arguments about the bill": "বিল নিয়ে ঝগড়া", "Questions people ask.": "যে প্রশ্নগুলো সবাই করে", "What kind of meter does this work with?": "কোন ধরনের মিটারে এটি কাজ করে?", "A prepaid main meter shared by several flats, each with its own sub-meter. It works whether the readings count up or count down.": "যে প্রিপেইড মেইন মিটার কয়েকটি ফ্ল্যাট শেয়ার করে এবং প্রতিটির নিজস্ব সাব-মিটার আছে। রিডিং বাড়ুক বা কমুক, দুই ক্ষেত্রেই কাজ করে।", "Why does the rate change every cycle?": "প্রতি সাইকেলে রেট কেন বদলায়?", "Tariff slabs, demand charges and VAT mean the effective ৳ per kWh moves around. WattSplit recalculates it from what you really paid.": "ট্যারিফ স্ল্যাব, ডিমান্ড চার্জ ও ভ্যাটের কারণে প্রকৃত প্রতি kWh টাকার হার বদলায়। আপনি আসলে যা দিয়েছেন তা থেকেই WattSplit রেট নতুন করে হিসাব করে।", "What if the sub-meters don't add up to the main meter?": "সাব-মিটারের যোগফল মেইন মিটারের সাথে না মিললে?", "You'll see a warning with the difference. It's often common lights, a water pump or line loss, but it can also mean a reading was copied wrong.": "পার্থক্যসহ একটি সতর্কবার্তা দেখাবে। এটা প্রায়ই কমন বাতি, পানির পাম্প বা লাইন লসের কারণে হয়, তবে রিডিং ভুল লেখাও হতে পারে।", "Is my data stored anywhere?": "আমার ডেটা কি কোথাও জমা থাকে?", "Only in your own browser, on your own device. Nothing is sent to a server.": "শুধু আপনার নিজের ডিভাইসের ব্রাউজারে। কোনো সার্ভারে কিছু পাঠানো হয় না।", "Ready to see your share?": "আপনার অংশ দেখতে প্রস্তুত?", "© 2026 WattSplit · Built for shared homes by": "© 2026 WattSplit · শেয়ার্ড বাসার জন্য তৈরি · নির্মাতা:", "Electricity Bill Calculator": "বিদ্যুৎ বিল ক্যালকুলেটর", "Enter readings · Calculate · See your bill": "রিডিং দিন · হিসাব করুন · বিল দেখুন", "← Home": "← হোম", "Sub meters": "সাব-মিটার", "Review": "যাচাই", "Previous · after recharge": "আগের · রিচার্জের পর", "Current · balance used up": "এখনকার · ব্যালেন্স শেষ", "Meter reading": "মিটার রিডিং", "Balance": "ব্যালেন্স", "How many sub meters are connected to your main meter?": "আপনার মেইন মিটারে কয়টি সাব-মিটার যুক্ত আছে?", "Count yours too. You can change this any time.": "আপনারটাও গুনুন। যেকোনো সময় বদলাতে পারবেন।", "You": "আপনি", "Previous": "আগের", "Current": "এখনকার", "Only your own readings are required. Fill the others to see everyone's share.": "শুধু আপনার নিজের রিডিং দিলেই চলবে। বাকিদের দিলে সবার অংশ দেখতে পাবেন।", "← Back": "← পিছনে", "Next →": "পরবর্তী →", "Calculate my bill →": "আমার বিল হিসাব করুন →", "Clear all": "সব মুছুন", "Tap again to confirm": "নিশ্চিত করতে আবার চাপ দিন", "Summary": "সারসংক্ষেপ", "Breakdown": "ভাগ-বিভাজন", "Steps": "ধাপসমূহ", "Copy": "কপি", "✔ Start new cycle": "✔ নতুন সাইকেল শুরু", "kWh used": "kWh ব্যবহার", "Rate": "রেট", "Rate / kWh": "রেট / kWh", "Fill all 4 fields to see the rate live": "৪টি ঘরই পূরণ করলে এখানে লাইভ রেট দেখা যাবে", "Enter readings to see kWh": "kWh দেখতে রিডিং দিন", "Complete the main meter step to see the rate.": "রেট দেখতে মেইন মিটারের ধাপ সম্পূর্ণ করুন।", "Add your sub meter readings.": "আপনার সাব-মিটারের রিডিং দিন।", "Main total": "মেইন মোট", "Unassigned": "বণ্টনহীন", "The sub meters add up to": "সাব-মিটারগুলোর যোগফল", "less than the main meter — this could be common lights, a pump or line loss.": "মেইন মিটারের চেয়ে কম — এটি কমন বাতি, পাম্প বা লাইন লসের কারণে হতে পারে।", "more than the main meter — please double-check the readings.": "মেইন মিটারের চেয়ে বেশি — রিডিংগুলো আবার যাচাই করুন।", "✓ Main and sub meters match": "✓ মেইন ও সাব-মিটার মিলে গেছে", "1. Money spent": "১. খরচ হওয়া টাকা", "2. Main meter kWh": "২. মেইন মিটারের kWh", "(reading counts down, so larger − smaller)": "(রিডিং কমছে, তাই বড় − ছোট)", "3. Rate per kWh": "৩. প্রতি kWh রেট", "4. Your kWh": "৪. আপনার kWh", "5. Your bill": "৫. আপনার বিল", "Electricity bill:": "বিদ্যুৎ বিল:", "Copied to clipboard": "ক্লিপবোর্ডে কপি হয়েছে", "Copy not available here": "এখানে কপি করা যাচ্ছে না", "New cycle started — enter the current readings": "নতুন সাইকেল শুরু — এখনকার রিডিং দিন", "Cleared": "মুছে ফেলা হয়েছে", "Please fill all 4 main meter fields.": "মেইন মিটারের ৪টি ঘরই পূরণ করুন।", "Reading or balance hasn't changed, or current balance is higher than previous.": "রিডিং বা ব্যালেন্স বদলায়নি, অথবা এখনকার ব্যালেন্স আগেরটার চেয়ে বেশি।", "Enter your sub meter's previous and current readings.": "আপনার সাব-মিটারের আগের ও এখনকার রিডিং দিন।", "Check the main meter values.": "মেইন মিটারের মানগুলো যাচাই করুন।", "WattSplit · Electricity Bill Calculator": "WattSplit · বিদ্যুৎ বিল ক্যালকুলেটর","Step 1":"ধাপ ১","Step 2":"ধাপ ২","Step 3":"ধাপ ৩","Step 4":"ধাপ ৪","Main reading":"মেইন রিডিং","Flat 1":"ফ্ল্যাট ১","Flat 2":"ফ্ল্যাট ২","Balance left":"বাকি ব্যালেন্স","After recharge":"রিচার্জের পর","When used up":"ব্যালেন্স শেষে","Flat 3":"ফ্ল্যাট ৩","Main meter reading & balance":"মূল মিটারের রিডিং ও ব্যালেন্স","Every sub-meter reading":"প্রতিটি সাব-মিটারের রিডিং","Do it right after you recharge":"রিচার্জের ঠিক পরেই এটি করুন","Nothing to track while you wait":"অপেক্ষার সময় কিছু লিখে রাখতে হবে না","Everyone uses power as normal":"সবাই স্বাভাবিকভাবে বিদ্যুৎ ব্যবহার করুন","Note the balance just before the next top-up":"পরের রিচার্জের ঠিক আগে ব্যালেন্স দেখে নিন","Each sub-meter reading again":"প্রতিটি সাব-মিটারের রিডিং আবার","Same meters, same order as Step 1":"ধাপ ১-এর মতোই একই মিটার, একই ক্রমে","Enter the four main-meter values":"মূল মিটারের চারটি মান লিখুন","Add your sub-meter readings":"আপনার সাব-মিটারের রিডিং যোগ করুন","See everyone's share and the steps":"সবার অংশ ও হিসাবের ধাপ দেখুন","Usage per flat":"ফ্ল্যাট অনুযায়ী ব্যবহার","Tip: take a photo of every meter right after recharging so nothing gets mixed up.":"পরামর্শ: রিচার্জের পর প্রতিটি মিটারের ছবি তুলে রাখুন, যাতে কিছু গুলিয়ে না যায়।","Tip: no need to check every day — one reading at each end is enough.":"পরামর্শ: প্রতিদিন দেখার দরকার নেই—শুরু ও শেষের রিডিংই যথেষ্ট।","Tip: take the readings before you recharge again, while the balance is still low.":"পরামর্শ: আবার রিচার্জ করার আগেই, ব্যালেন্স কম থাকতেই রিডিং নিন।","Tip: your result is only as accurate as your readings — double-check each number.":"পরামর্শ: ফলাফলের নির্ভুলতা নির্ভর করে রিডিং-এর ওপর—প্রতিটি সংখ্যা আবার মিলিয়ে নিন।"};
+const REV={};for(const k in BN)REV[BN[k]]=k;
+const T=s=>lang==="bn"&&BN[s]?BN[s]:s;
+const DEF={en:["Me","Flat 2","Flat 3","Flat 4","Flat 5","Flat 6"],bn:["আমি","ফ্ল্যাট ২","ফ্ল্যাট ৩","ফ্ল্যাট ৪","ফ্ল্যাট ৫","ফ্ল্যাট ৬"]};
+const billOf=n=>{const d=n===DEF.en[0]||n===DEF.bn[0];return lang==="bn"?(d?"আমার বিল":esc(n)+"-এর বিল"):(d?"My bill":esc(n)+"'s bill");};
+const orig=new WeakMap();
+function walk(root){
+  const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(n){const p=n.parentElement;if(!p||/^(SCRIPT|STYLE)$/.test(p.tagName)||p.closest("[data-dyn],.use,.hh1"))return NodeFilter.FILTER_REJECT;return n.nodeValue.trim()?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT;}});
+  let n;while((n=w.nextNode())){
+    let o=orig.get(n);const v=n.nodeValue;
+    if(o===undefined){const m=v.match(/^(\s*)([\s\S]*?)(\s*)$/);o={a:m[1],k:REV[m[2]]!==undefined?REV[m[2]]:m[2],b:m[3]};orig.set(n,o);}
+    const nv=o.a+(lang==="bn"&&BN[o.k]?BN[o.k]:o.k)+o.b;if(nv!==v)n.nodeValue=nv;
+  }
+}
+function splitH1(h){if(!h.dataset.en)h.dataset.en=h.textContent.trim();h.dataset.shown=lang;h.innerHTML=T(h.dataset.en).split(/\s+/).map((w,i)=>`<span class="w" style="animation-delay:${.3+i*.13}s">${esc(w)}</span>`).join(" ");}
+function applyLang(){
+  document.documentElement.lang=lang;document.title=T("WattSplit · Electricity Bill Calculator");
+  document.querySelectorAll("[data-lang-toggle]").forEach(b=>{b.dataset.l=lang;[...b.children].forEach((sp,i)=>sp.classList.toggle("on",(i===0)===(lang==="en")));});
+  walk($("home"));walk($("app"));
+  document.querySelectorAll("[data-split]").forEach(h=>{if(h.dataset.shown!==lang)splitH1(h);});
+  DEF[lang].forEach((d,i)=>{defaults[i]=d;const el=$("n"+i);if(el&&(el.value===DEF.en[i]||el.value===DEF.bn[i]))el.value=d;});
+  live();go(step);if($("ov").classList.contains("open"))calc(true);save();
+}
+document.querySelectorAll("[data-lang-toggle]").forEach(b=>b.addEventListener("click",()=>{lang=lang==="en"?"bn":"en";try{localStorage.setItem("wattsplit-lang",lang);}catch(e){}applyLang();}));
+["live1","review","t0","t1","t2","wt","next","back","toast"].forEach(id=>$(id).setAttribute("data-dyn",""));
+const MAX=6,defaults=[...DEF[lang]];let count=3;
 const colv=i=>`var(--f${i+1})`;
 $("subs").innerHTML=[0,1,2,3,4,5].map(i=>`<div class="flat ${i===0?"me":""}" style="--c:${colv(i)}">
   <div class="fh"><input class="name" id="n${i}" value="${defaults[i]}">${i===0?'<span class="you">You</span>':''}</div>
@@ -449,23 +722,26 @@ const f=(x,d=2)=>x.toLocaleString("en-US",{minimumFractionDigits:d,maximumFracti
 const esc=s=>s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function tween(el,to,fmt,ms=900){const t0=performance.now();(function s(t){const p=Math.min((t-t0)/ms,1),e=1-Math.pow(1-p,3);el.textContent=fmt(to*e);if(p<1)requestAnimationFrame(s)})(t0);}
 let tt;function toast(m,good){const t=$("toast");t.textContent=m;t.classList.toggle("good",!!good);t.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("show"),2600);}
-function armed(btn,label,fn){btn.onclick=function(){if(!this.dataset.arm){this.dataset.arm=1;this.textContent="Tap again to confirm";clearTimeout(this._t);this._t=setTimeout(()=>{delete this.dataset.arm;this.textContent=label},3000);return;}delete this.dataset.arm;this.textContent=label;fn();};}
+function armed(btn,label,fn){btn.onclick=function(){if(!this.dataset.arm){this.dataset.arm=1;this.textContent=T("Tap again to confirm");clearTimeout(this._t);this._t=setTimeout(()=>{delete this.dataset.arm;this.textContent=T(label)},3000);return;}delete this.dataset.arm;this.textContent=T(label);fn();};}
 
 /* ---- window / steps ---- */
 const slides=[...document.querySelectorAll(".slide")],sts=[...document.querySelectorAll(".st")],titles=["Main meter","Sub meters","Review"];
 let step=0;
 function fit(){$("vp").style.height=slides[step].offsetHeight+"px";}
 slides.forEach(s=>new ResizeObserver(fit).observe(s));
+function setRoll(el,key){const raw=T(key),lead=/^\u2190/.test(raw),tail=/\u2192\s*$/.test(raw),txt=raw.replace(/^\u2190\s*/,"").replace(/\s*\u2192$/,"");
+  if(!el.querySelector(".rl-in")){el.classList.add("roll");el.innerHTML='<span class="bg"></span>'+(lead?'<span class="ar"></span>':'')+'<span class="rl"><span class="rl-in"><span></span><span aria-hidden="true"></span></span></span>'+(tail?'<span class="ar"></span>':'');}
+  const sp=el.querySelectorAll(".rl-in>span");sp[0].textContent=txt;sp[1].textContent=txt;const ar=el.querySelector(".ar");if(ar)ar.textContent=lead?"\u2190":"\u2192";}
 function go(n){
   step=n;$("slides").style.transform=`translateX(-${n*100}%)`;
   slides.forEach((s,i)=>{s.classList.toggle("act",i===n);s.inert=i!==n;});
   sts.forEach((b,i)=>{b.classList.toggle("on",i===n);b.classList.toggle("done",i<n);});
-  $("fill").style.width=(n/2*100)+"%";$("wt").textContent=titles[n];
-  $("back").classList.toggle("hid",n===0);$("next").textContent=n===2?"Calculate my bill →":"Next →";
+  $("fill").style.width=(n/2*100)+"%";$("wt").textContent=T(titles[n]);
+  $("back").classList.toggle("hid",n===0);setRoll($("back"),"← Back");setRoll($("next"),n===2?"Calculate my bill →":"Next →");
   fit();
 }
-function mainErr(){const v=["pm","cm","pb","cb"].map(num);if(v.some(isNaN))return"Please fill all 4 main meter fields.";if(Math.abs(v[1]-v[0])<=0||v[2]-v[3]<=0)return"Reading or balance hasn't changed, or current balance is higher than previous.";return"";}
-function meErr(){return(isNaN(num("p0"))||isNaN(num("c0")))?"Enter your sub meter's previous and current readings.":"";}
+function mainErr(){const v=["pm","cm","pb","cb"].map(num);if(v.some(isNaN))return T("Please fill all 4 main meter fields.");if(Math.abs(v[1]-v[0])<=0||v[2]-v[3]<=0)return T("Reading or balance hasn't changed, or current balance is higher than previous.");return"";}
+function meErr(){return(isNaN(num("p0"))||isNaN(num("c0")))?T("Enter your sub meter's previous and current readings."):"";}
 function bad(m,at){go(at);toast(m);const w=$("win");w.classList.remove("shake");void w.offsetWidth;w.classList.add("shake");}
 function goto(n){let e;if(n>=1&&(e=mainErr()))return bad(e,0);if(n>=2&&(e=meErr()))return bad(e,1);go(n);}
 sts.forEach(b=>b.onclick=()=>goto(+b.dataset.s));
@@ -491,17 +767,17 @@ let lastRate=null;
 function main(){const pm=num("pm"),cm=num("cm"),pb=num("pb"),cb=num("cb"),spent=pb-cb,mu=Math.abs(cm-pm);const good=![pm,cm,pb,cb].some(isNaN)&&spent>0&&mu>0;return{pm,cm,pb,cb,spent,mu,good,rate:good?spent/mu:NaN};}
 function live(){
   const m=main();
-  $("live1").innerHTML=m.good?`<span class="chip">Money spent <b>৳ ${f(m.spent)}</b></span><span class="chip">kWh used <b>${f(m.mu)}</b></span><span class="chip hi">Rate <b>${f(m.rate,4)} ৳/kWh</b></span>`:'<span class="hint">Fill all 4 fields to see the rate live</span>';
+  $("live1").innerHTML=m.good?`<span class="chip">${T("Money spent")} <b>৳ ${f(m.spent)}</b></span><span class="chip">${T("kWh used")} <b>${f(m.mu)}</b></span><span class="chip hi">${T("Rate")} <b>${f(m.rate,4)} ৳/kWh</b></span>`:(()=>{const k=["pm","cm","pb","cb"].filter(id=>!isNaN(num(id))).length,bn=lang==="bn";return `<div class="lv"><div class="lvh"><span class="hint">${T("Fill all 4 fields to see the rate live")}</span><b>${k}/4</b></div><div class="lvbar"><i style="width:${k*25}%"></i></div><p class="tip">${bn?"\u0986\u0997\u09c7\u09b0 \u09ae\u09be\u09a8 = \u09b6\u09c7\u09b7 \u09b0\u09bf\u099a\u09be\u09b0\u09cd\u099c\u09c7\u09b0 \u09a0\u09bf\u0995 \u09aa\u09b0\u09c7\u0964 \u09b8\u09b0\u09cd\u09ac\u09b6\u09c7\u09b7 \u09ae\u09be\u09a8 = \u09af\u0996\u09a8 \u09ac\u09cd\u09af\u09be\u09b2\u09c7\u09a8\u09cd\u09b8 \u09b6\u09c7\u09b7 \u09b9\u09af\u09bc\u09c7 \u0997\u09c7\u099b\u09c7\u0964":"Previous = right after your last recharge. Current = when the balance ran out."}</p></div>`;})();
   const ws=$("wstat");
   if(m.good){ws.textContent=f(m.rate,2)+" ৳/kWh";ws.classList.add("show");if(lastRate!==m.rate.toFixed(4)){ws.classList.remove("flash");void ws.offsetWidth;ws.classList.add("flash");lastRate=m.rate.toFixed(4);}}else{ws.classList.remove("show");lastRate=null;}
   let rows="";
   for(let i=0;i<count;i++){
     const p=num("p"+i),c=num("c"+i),el=$("u"+i);
-    if(isNaN(p)||isNaN(c)){el.textContent="Enter readings to see kWh";continue;}
-    const u=Math.abs(c-p);el.innerHTML=`<b>${f(u)}</b> kWh used`;
-    rows+=`<div class="res" style="--c:${colv(i)}"><div class="rt"><div class="l"><s></s>${esc($("n"+i).value||defaults[i])}</div><div class="v">${f(u)} kWh used</div></div></div>`;
+    if(isNaN(p)||isNaN(c)){el.textContent=T("Enter readings to see kWh");continue;}
+    const u=Math.abs(c-p);el.innerHTML=`<b>${f(u)}</b> ${T("kWh used")}`;
+    rows+=`<div class="res" style="--c:${colv(i)}"><div class="rt"><div class="l"><s></s>${esc($("n"+i).value||defaults[i])}</div><div class="v">${f(u)} ${T("kWh used")}</div></div></div>`;
   }
-  $("review").innerHTML=(m.good?`<div class="tiles"><div class="tile"><span>Money spent</span><b>৳ ${f(m.spent)}</b></div><div class="tile"><span>kWh used</span><b>${f(m.mu)}</b></div><div class="tile"><span>Rate / kWh</span><b>${f(m.rate,4)}</b></div></div>`:'<p class="hint">Complete the main meter step to see the rate.</p>')+(rows||'<p class="hint">Add your sub meter readings.</p>');
+  $("review").innerHTML=(m.good?`<div class="tiles"><div class="tile"><span>${T("Money spent")}</span><b>৳ ${f(m.spent)}</b></div><div class="tile"><span>${T("kWh used")}</span><b>${f(m.mu)}</b></div><div class="tile"><span>${T("Rate / kWh")}</span><b>${f(m.rate,4)}</b></div></div>`:`<p class="hint">${T("Complete the main meter step to see the rate.")}</p>`)+(rows||`<p class="hint">${T("Add your sub meter readings.")}</p>`);
 }
 
 /* ---- result modal ---- */
@@ -519,35 +795,37 @@ function confetti(){
     s.style.setProperty("--dx",Math.cos(a)*d+"px");s.style.setProperty("--dy",Math.sin(a)*d+"px");s.style.setProperty("--r",(Math.random()*360-180)+"deg");
     m.appendChild(s);setTimeout(()=>s.remove(),1200);}
 }
-function calc(){
+function calc(re){
   save();const m=main();
-  if(!m.good)return bad(mainErr()||"Check the main meter values.",0);
+  if(!m.good)return bad(mainErr()||T("Check the main meter values."),0);
   if(meErr())return bad(meErr(),1);
-  const {spent,mu,rate,pb,cb,pm,cm}=m,mp=num("p0"),mc=num("c0"),myN=$("n0").value||"Me",myU=Math.abs(mc-mp),myT=myU*rate;
+  const {spent,mu,rate,pb,cb,pm,cm}=m,mp=num("p0"),mc=num("c0"),myN=$("n0").value||defaults[0],myU=Math.abs(mc-mp),myT=myU*rate;
   const list=[];let subU=0,subT=0;
   for(let i=0;i<count;i++){const p=num("p"+i),c=num("c"+i);if(isNaN(p)||isNaN(c))continue;const u=Math.abs(c-p),t=u*rate;subU+=u;subT+=t;list.push({i,nm:$("n"+i).value||defaults[i],u,t});}
   const parts=list.map(x=>({v:x.t,col:colv(x.i),nm:x.nm}));
-  if(spent-subT>0.005)parts.push({v:spent-subT,col:"var(--c3)",nm:"Unassigned"});
+  if(spent-subT>0.005)parts.push({v:spent-subT,col:"var(--c3)",nm:T("Unassigned")});
   const total=parts.reduce((a,b)=>a+b.v,0),R=42,C=2*Math.PI*R;let cum=0,segs="";
   parts.forEach(p=>{const len=p.v/total*C;segs+=`<circle class="seg" r="${R}" cx="55" cy="55" fill="none" stroke="${p.col}" stroke-width="12" stroke-dasharray="${Math.max(len-1.5,.1)} ${C}" stroke-dashoffset="${-cum}"/>`;cum+=len;});
   const diffU=mu-subU;
-  $("t0").innerHTML=`<div class="hero"><div><div class="t">${esc(myN)}'s bill</div><div class="b" id="big">৳ 0.00</div><div class="u">${f(myU)} kWh × ${f(rate,4)} ৳/kWh</div><span class="pill">Rate per kWh <b>${f(rate,4)} ৳</b></span></div>
-   <div class="donut"><svg viewBox="0 0 110 110"><circle r="${R}" cx="55" cy="55" fill="none" stroke="var(--bd)" stroke-width="12"/>${segs}</svg><div class="dc"><span>Main total</span><b id="dcv">৳ ${f(spent,0)}</b></div></div></div>
+  $("t0").innerHTML=`<div class="hero"><div><div class="t">${billOf(myN)}</div><div class="b" id="big">৳ 0.00</div><div class="u">${f(myU)} kWh × ${f(rate,4)} ৳/kWh</div><span class="pill">${T("Rate per kWh")} <b>${f(rate,4)} ৳</b></span></div>
+   <div class="donut"><svg viewBox="0 0 110 110"><circle r="${R}" cx="55" cy="55" fill="none" stroke="var(--bd)" stroke-width="12"/>${segs}</svg><div class="dc"><span>${T("Main total")}</span><b id="dcv">৳ ${f(spent,0)}</b></div></div></div>
    <div class="legend">${parts.map((p,k)=>`<span style="--c:${p.col};animation-delay:${.3+k*.1}s"><s></s>${esc(p.nm)} <b>${(p.v/total*100).toFixed(0)}%</b></span>`).join("")}</div>`;
   $("t1").innerHTML=list.map((x,k)=>`<div class="res" style="--c:${colv(x.i)};animation-delay:${.05+k*.08}s"><div class="rt"><div><div class="l"><s></s>${esc(x.nm)}</div><div class="d">${f(x.u)} kWh</div></div><div class="v">৳ ${f(x.t)}</div></div><div class="bar"><i style="--w:${(x.t/total*100).toFixed(1)}%"></i></div></div>`).join("")+
-   (Math.abs(diffU)>0.05?`<div class="warn">The sub meters add up to <b>${f(Math.abs(diffU))} kWh (৳ ${f(Math.abs(diffU)*rate)})</b> ${diffU>0?"less than the main meter — this could be common lights, a pump or line loss.":"more than the main meter — please double-check the readings."}</div>`:`<div class="ok">✓ Main and sub meters match</div>`);
-  const S=[["1. Money spent",`${f(pb)} − ${f(cb)} = <b>${f(spent)} ৳</b>`],["2. Main meter kWh",`${f(Math.max(cm,pm))} − ${f(Math.min(cm,pm))} = <b>${f(mu)} kWh</b>${cm<pm?" <small>(reading counts down, so larger − smaller)</small>":""}`],["3. Rate per kWh",`${f(spent)} ÷ ${f(mu)} = <b>${f(rate,4)} ৳</b>`],["4. Your kWh",`${f(Math.max(mc,mp))} − ${f(Math.min(mc,mp))} = <b>${f(myU)} kWh</b>`],["5. Your bill",`${f(myU)} × ${f(rate,4)} = <b>${f(myT)} ৳</b>`]];
+   (Math.abs(diffU)>0.05?`<div class="warn">${T("The sub meters add up to")} <b>${f(Math.abs(diffU))} kWh (৳ ${f(Math.abs(diffU)*rate)})</b> ${diffU>0?T("less than the main meter — this could be common lights, a pump or line loss."):T("more than the main meter — please double-check the readings.")}</div>`:`<div class="ok">${T("✓ Main and sub meters match")}</div>`);
+  const S=[[T("1. Money spent"),`${f(pb)} − ${f(cb)} = <b>${f(spent)} ৳</b>`],[T("2. Main meter kWh"),`${f(Math.max(cm,pm))} − ${f(Math.min(cm,pm))} = <b>${f(mu)} kWh</b>${cm<pm?` <small>${T("(reading counts down, so larger − smaller)")}</small>`:""}`],[T("3. Rate per kWh"),`${f(spent)} ÷ ${f(mu)} = <b>${f(rate,4)} ৳</b>`],[T("4. Your kWh"),`${f(Math.max(mc,mp))} − ${f(Math.min(mc,mp))} = <b>${f(myU)} kWh</b>`],[T("5. Your bill"),`${f(myU)} × ${f(rate,4)} = <b>${f(myT)} ৳</b>`]];
   $("t2").innerHTML=S.map((s,k)=>`<div class="stp" style="animation-delay:${.05+k*.09}s"><b>${s[0]}</b><br>${s[1]}</div>`).join("");
-  $("copy").onclick=async function(){try{await navigator.clipboard.writeText(`Electricity bill: ${myN} ${f(myU)} kWh × ${f(rate,4)} ৳ = ৳ ${f(myT)}`);toast("Copied to clipboard",true);}catch(e){toast("Copy not available here");}};
+  $("copy").onclick=async function(){try{await navigator.clipboard.writeText(`${T("Electricity bill:")} ${myN} ${f(myU)} kWh × ${f(rate,4)} ৳ = ৳ ${f(myT)}`);toast(T("Copied to clipboard"),true);}catch(e){toast(T("Copy not available here"));}};
   $("ov").classList.add("open");$("ov").setAttribute("aria-hidden","false");document.body.style.overflow="hidden";
-  setTab(0);setTimeout(()=>{setTab(0);tween($("big"),myT,v=>"৳ "+f(v));tween($("dcv"),spent,v=>"৳ "+f(v,0),1200);confetti();},250);
+  const at=[...$("tabs").querySelectorAll("button")].findIndex(b=>b.classList.contains("on"));
+  if(re){setTab(Math.max(0,at));$("big").textContent="৳ "+f(myT);$("dcv").textContent="৳ "+f(spent,0);}
+  else{setTab(0);setTimeout(()=>{setTab(0);tween($("big"),myT,v=>"৳ "+f(v));tween($("dcv"),spent,v=>"৳ "+f(v,0),1200);confetti();},250);}
 }
 armed($("ncycle"),"✔ Start new cycle",()=>{
   $("pm").value=$("cm").value;$("pb").value=$("cb").value;
   for(let i=0;i<MAX;i++){$("p"+i).value=$("c"+i).value;$("c"+i).value="";}
-  $("cm").value="";$("cb").value="";save();live();closeM();go(0);toast("New cycle started — enter the current readings",true);
+  $("cm").value="";$("cb").value="";save();live();closeM();go(0);toast(T("New cycle started — enter the current readings"),true);
 });
-armed($("reset"),"Clear all",()=>{["pm","cm","pb","cb",...[0,1,2,3,4,5].flatMap(i=>["p"+i,"c"+i])].forEach(k=>$(k).value="");save();live();go(0);toast("Cleared",true);});
+armed($("reset"),"Clear all",()=>{["pm","cm","pb","cb",...[0,1,2,3,4,5].flatMap(i=>["p"+i,"c"+i])].forEach(k=>$(k).value="");save();live();go(0);toast(T("Cleared"),true);});
 function setCount(n,anim){
   count=n;
   document.querySelectorAll(".flat").forEach((c,i)=>{
@@ -588,10 +866,10 @@ window.addEventListener("resize",()=>{fit();if($("ov").classList.contains("open"
   }
   document.querySelectorAll("[data-calc]").forEach(b=>b.addEventListener("click",e=>{e.preventDefault();swap(true,e);}));
   $("tohome").onclick=e=>swap(false,e);
-  document.querySelectorAll("[data-split]").forEach(h=>{h.innerHTML=h.textContent.trim().split(/\s+/).map((w,i)=>`<span class="w" style="animation-delay:${.15+i*.07}s">${esc(w)}</span>`).join(" ");});
+  document.querySelectorAll("[data-split]").forEach(splitH1);
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}}),{threshold:.15});
   document.querySelectorAll(".rv").forEach(el=>io.observe(el));
-  const co=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){tween(e.target,+e.target.dataset.count,x=>Math.round(x),1400);co.unobserve(e.target);}}),{threshold:.6});
+  const co=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){tween(e.target,+e.target.dataset.count,x=>Math.round(x),2400);co.unobserve(e.target);}}),{threshold:.6});
   document.querySelectorAll("[data-count]").forEach(el=>co.observe(el));
   addEventListener("scroll",()=>{$("hnav").classList.toggle("sc",scrollY>8);const m=document.documentElement.scrollHeight-innerHeight;$("hprog").style.width=(m>0?scrollY/m*100:0)+"%";},{passive:true});
   (function(){const t=document.querySelector(".hmq-t");if(!t)return;const kids=[...t.children],n=kids.length/2,one=kids.slice(0,n).map(k=>k.outerHTML).join(""),w=t.scrollWidth/2;if(!w)return;const reps=Math.ceil(Math.max(innerWidth,screen.width)/w)+1;t.innerHTML=one.repeat(reps*2);t.style.animationDuration=(reps*w/70)+"s";})();
@@ -600,7 +878,68 @@ window.addEventListener("resize",()=>{fit();if($("ov").classList.contains("open"
   hero.addEventListener("pointerleave",()=>hero.querySelectorAll(".hchip").forEach(c=>{c.style.setProperty("--tx","0px");c.style.setProperty("--ty","0px");}));
   document.querySelectorAll(".hfeat,.hstep").forEach(c=>c.addEventListener("pointermove",e=>{const r=c.getBoundingClientRect();c.style.setProperty("--mx",e.clientX-r.left+"px");c.style.setProperty("--my",e.clientY-r.top+"px");}));
 
-  document.querySelectorAll('.home a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{const t=document.querySelector(a.getAttribute("href"));if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth"});}}));
+  document.querySelectorAll('.home a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{const t=document.querySelector(a.getAttribute("href"));if(t){e.preventDefault();window.smoothTo(t.getBoundingClientRect().top+scrollY-72);}}));
+})();
+/* ---- pinned steps: cards rise from the bottom, left progress bar ---- */
+(function(){
+  const wrap=document.querySelector(".hpin");if(!wrap)return;
+  const cards=[...wrap.querySelectorAll(".hcs")],dots=[...wrap.querySelectorAll(".hl-dots li")],fill=$("hlfill"),N=cards.length;
+  const clamp=(x,a,b)=>Math.max(a,Math.min(b,x)),ease=x=>x*x*(3-2*x);
+  let pend=false;
+  function upd(){
+    pend=false;if($("home").hidden)return;
+    const r=wrap.getBoundingClientRect(),vh=innerHeight,raw=-r.top/vh,t=clamp(raw*1.2,0,N-.4);
+    const e=cards.map((_,i)=>i?ease(clamp((t-(i-.5))/.5,0,1)):1);
+    let act=-1;
+    cards.forEach((c,i)=>{
+      let depth=0;for(let j=i+1;j<N;j++)depth+=e[j];
+      c.style.transform=`translate3d(0,${(1-e[i])*vh}px,0) scale(${1-.045*depth})`;
+      c.style.filter=depth>.01?`brightness(${1-.07*Math.min(depth,2)})`:"";
+      if(e[i]>=.5&&(i===N-1||e[i+1]<.5))act=i;
+    });
+    if(raw<-.55)act=-1;
+    cards.forEach((c,i)=>c.classList.toggle("act",i===act));
+    dots.forEach((d,i)=>{d.classList.toggle("on",i===act);d.classList.toggle("done",act>=0&&i<act);});
+    fill.style.transform=`scaleY(${clamp(t/(N-1),0,1)})`;
+  }
+  const req=()=>{if(!pend){pend=true;requestAnimationFrame(upd);}};
+  addEventListener("scroll",req,{passive:true});addEventListener("resize",req);req();
+})();
+/* ---- smooth, inertial scrolling (homepage only) ---- */
+(function(){
+  const rm=matchMedia("(prefers-reduced-motion:reduce)").matches,doc=document.documentElement;
+  let target=scrollY,cur=scrollY,raf=0;
+  const max=()=>Math.max(0,doc.scrollHeight-innerHeight),active=()=>!$("home").hidden&&!$("ov").classList.contains("open");
+  function tick(){const d=target-cur;if(Math.abs(d)<.3){cur=target;window.scrollTo(0,cur);raf=0;return;}cur+=d*.085;window.scrollTo(0,cur);raf=requestAnimationFrame(tick);}
+  function go(y){target=Math.max(0,Math.min(max(),y));if(!raf)raf=requestAnimationFrame(tick);}
+  window.smoothTo=y=>rm?window.scrollTo(0,y):go(y);
+  addEventListener("scroll",()=>{if(!raf){cur=target=scrollY;}},{passive:true});
+  if(rm)return;
+  addEventListener("wheel",e=>{
+    if(!active()||e.ctrlKey||Math.abs(e.deltaX)>Math.abs(e.deltaY))return;
+    e.preventDefault();
+    const dy=e.deltaMode===1?e.deltaY*32:e.deltaMode===2?e.deltaY*innerHeight:e.deltaY;
+    if(!raf){cur=target=scrollY;}
+    go(target+dy);
+  },{passive:false});
+  addEventListener("keydown",e=>{
+    if(!active()||e.target.closest("input,textarea,select,[contenteditable]"))return;
+    const m={ArrowDown:100,ArrowUp:-100,PageDown:innerHeight*.85,PageUp:-innerHeight*.85}[e.key];
+    if(m!==undefined){e.preventDefault();if(!raf){cur=target=scrollY;}go(target+m);}
+    else if(e.key==="Home"){e.preventDefault();go(0);}else if(e.key==="End"){e.preventDefault();go(max());}
+  });
+})();
+document.querySelectorAll(".hb[data-calc]").forEach(b=>{const t=[...b.childNodes].find(n=>n.nodeType===3&&n.nodeValue.trim());if(!t)return;const txt=t.nodeValue.trim(),ar=b.querySelector("span");b.classList.add("roll");b.innerHTML=`<span class="bg"></span><span class="rl"><span class="rl-in"><span>${txt}</span><span aria-hidden="true">${txt}</span></span></span><span class="ar">${ar?ar.textContent:"→"}</span>`;});
+applyLang();
+
+/* ---- theme (light / dark) ---- */
+(function(){
+  const root=document.documentElement,btns=[...document.querySelectorAll("[data-theme-toggle]")],meta=document.querySelector('meta[name="theme-color"]');
+  const cur=()=>root.getAttribute("data-theme")==="dark"?"dark":"light";
+  function paint(t){root.setAttribute("data-theme",t);root.style.colorScheme=t;btns.forEach(b=>b.setAttribute("aria-checked",t==="dark"?"true":"false"));if(meta)meta.content=t==="dark"?"#0b1410":"#ffffff";}
+  paint(cur());
+  btns.forEach(b=>b.addEventListener("click",()=>{const t=cur()==="dark"?"light":"dark";paint(t);try{localStorage.setItem("wattsplit-theme",t);}catch(e){}}));
+  try{const mq=matchMedia("(prefers-color-scheme: dark)");const f=e=>{let saved=null;try{saved=localStorage.getItem("wattsplit-theme");}catch(_){}if(!saved)paint(e.matches?"dark":"light");};mq.addEventListener?mq.addEventListener("change",f):mq.addListener&&mq.addListener(f);}catch(e){}
 })();
 </script>
 </body>
